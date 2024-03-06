@@ -10972,3 +10972,35 @@ section.resume-section .resume-section-content {
   }
 }
 
+/* Light Mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --heading-color: #333333; /* Default color for headings */
+  --card-background-color: #ffffff; /* Default background color for cards */
+  --card-border-color: #cccccc; /* Default border color for cards */
+}
+
+/* Dark Mode */
+.dark-mode {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --heading-color: #ffffff; /* Color for headings in dark mode */
+  --card-background-color: #222222; /* Background color for cards in dark mode */
+  --card-border-color: #555555; /* Border color for cards in dark mode */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color); /* Default color for headings */
+}
+
+.card {
+  background-color: var(--card-background-color); /* Default background color for cards */
+  border: 1px solid var(--card-border-color); /* Default border color for cards */
+}
+
