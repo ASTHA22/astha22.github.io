@@ -34,3 +34,20 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
+// Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    
+    // Save user preference for dark mode
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+  }
+  
+  // Check if dark mode preference is saved in localStorage
+  const darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'true') {
+    document.body.classList.add('dark-mode');
+  }
+  
+
