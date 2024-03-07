@@ -11003,14 +11003,3 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--card-background-color); /* Default background color for cards */
   border: 1px solid var(--card-border-color); /* Default border color for cards */
 }
-
-/* Media query for small screens */
-@media (max-width: 767px) {
-  .col-md-6 .card {
-      width: 100%; /* Set width to 100% for cards within col-md-6 on small screens */
-  }
-  .col-md-6:nth-child(odd) .card:nth-child(2),
-  .col-md-6:nth-child(even) .card:nth-child(1) {
-      order: -1; /* Reverse the order of second card in odd columns and first card in even columns */
-  }
-}
