@@ -11007,7 +11007,7 @@ h1, h2, h3, h4, h5, h6 {
 .interests {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 50px 50px 50px 0; /* Adjust left padding */
 }
 
 .text-column {
@@ -11026,6 +11026,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .interests {
+    padding: 50px 0; /* Remove padding on mobile */
+  }
+  
   .text-column,
   .image-column {
     flex: 1 1 100%; /* Full width on smaller screens */
