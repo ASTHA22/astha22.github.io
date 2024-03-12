@@ -102,6 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: justify;
 }
 
 hr {
@@ -11034,5 +11035,23 @@ h1, h2, h3, h4, h5, h6 {
   .image-column {
     flex: 1 1 100%; /* Full width on smaller screens */
     padding-right: 0;
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.centered {
+  display: block;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .list-unstyled li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
   }
 }
