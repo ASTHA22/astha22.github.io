@@ -51,3 +51,20 @@ function toggleDarkMode() {
   }
   
 
+// Select all cards
+const cards = document.querySelectorAll('.card');
+
+// Create an intersection observer
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add the visible class when the card is in the viewport
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+// Observe each card
+cards.forEach(card => {
+    observer.observe(card);
+});
