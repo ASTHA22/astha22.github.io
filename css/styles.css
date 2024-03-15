@@ -11006,20 +11006,24 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--card-border-color); /* Default border color for cards */
 }
 
-.interests {
+.about {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 50px 50px 0; /* Adjust left padding */
 }
 
+
+
 .text-column {
-  flex: 1 1 50%; /* 50% width on larger screens */
-  padding-left: 20px;
+  flex: 1 1 60%; /* 50% width on larger screens */
   text-align: justify; /* Align text to justify */
 }
 
 .image-column {
-  flex: 1 1 50%; /* 50% width on larger screens */
+  flex: 1 1 40%; /* 50% width on larger screens */
+  padding-left:40px;
+  padding-right: 40px; 
+  margin-top: 150px;
 }
 
 .profile-picture {
@@ -11028,14 +11032,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .interests {
-    padding: 50px 0; /* Remove padding on mobile */
+  .resume-section-content .about {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      padding: 50px 0; /* Remove padding on mobile */
+      align-items: center;
   }
-  
-  .text-column,
+
   .image-column {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    padding-right: 0;
+      order: 2; /* Reorder the image column to come after the text for smaller screens */
+      margin-top: 20px; /* Add space between text and image for smaller screens */
+      flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .text-column {
+      order: 1; /* Reorder the text column to come before the image for smaller screens */
+      flex: 1 1 100%; /* Full width on smaller screens */
   }
 }
 
