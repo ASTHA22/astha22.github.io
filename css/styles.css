@@ -2801,7 +2801,7 @@ textarea.form-control-lg {
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -11181,3 +11181,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.social-icons-col .social-icon-col:hover {
+  transform: scale(1.1); 
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
