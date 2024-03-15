@@ -11100,6 +11100,14 @@ h1, h2, h3, h4, h5, h6 {
   gap: 5px; /* Adjust gap between tags as needed */
   justify-content: flex-start; /* Align tags to the start of the container */
 }
+.tag:hover {
+  background-color: #dcdcdc; /* Change background color on hover */
+}
+
+.tag:hover .text_tag {
+  font-weight: bold; /* Optionally make text bold on hover */
+}
+
 .card .float-right {
   float: right;
 }
