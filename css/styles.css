@@ -10948,7 +10948,7 @@ p.lead {
 }
 
 section.resume-section {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -11121,5 +11121,63 @@ h1, h2, h3, h4, h5, h6 {
 .card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Social icons color*/
+.social-icons-col {
+  display: flex;
+  margin-bottom: 5px; /* Adjust spacing as needed */
+  align-items: center;
+  justify-content : left;
+}
+
+.social-icon-col {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between icons as needed */
+}
+
+/* Font Awesome icons */
+.social-icon-col i {
+  font-size: 30px; /* Adjust icon size as needed */
+  color: #333; /* Default color for icons */
+}
+
+/* Invert icons in dark mode */
+@media (prefers-color-scheme: dark) {
+  .social-icon-col i {
+      filter: invert(1);
+  }
+}
+
+
+/* Animation for the logos */
+.social-icon-col:nth-child(1) img {
+  animation: slideAnimation 1s ease forwards;
+}
+
+.social-icon-col:nth-child(2) img {
+  animation: slideAnimation 1s ease forwards 0.1s; /* Delay the animation by 0.1s */
+}
+
+.social-icon-col:nth-child(3) img {
+  animation: slideAnimation 1s ease forwards 0.2s; /* Delay the animation by 0.2s */
+}
+
+.social-icon-col:nth-child(4) img {
+  animation: slideAnimation 1s ease forwards 0.2s; /* Delay the animation by 0.2s */
+}
+
+.social-icon-col:nth-child(5) img {
+  animation: slideAnimation 1s ease forwards 0.2s; /* Delay the animation by 0.2s */
+}
+
+/* Define the slideAnimation keyframes */
+@keyframes slideAnimation {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
 }
 
