@@ -10,8 +10,8 @@ Features:
 6. Project Showcasing: A dedicated section showcases my projects, providing details about each project along with links to view them live or access their source code.
 
 Technologies Used:
-1. HTML5
-2. CSS3 
+1. HTML
+2. CSS
 3. JavaScript 
 4. Bootstrap
 5. Web Analytics Tool 
