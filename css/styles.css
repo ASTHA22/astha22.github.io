@@ -11160,7 +11160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mr-custom {
-  margin-right: 6rem; /* Define your custom margin size */
+  margin-right: 5rem; /* Define your custom margin size */
 }
 /* Define the initial state of the card */
 .card {
