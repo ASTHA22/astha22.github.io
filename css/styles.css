@@ -11080,6 +11080,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--padding-9xs) var(--padding-xl);
   margin-top: 10px;
   display: inline-flex; /* Adjusted to inline-flex */
+  font-size: 14px;
 }
 
 .tags {
