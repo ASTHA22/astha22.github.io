@@ -10980,6 +10980,7 @@ section.resume-section .resume-section-content {
   --heading-color: #333333; /* Default color for headings */
   --card-background-color: #ffffff; /* Default background color for cards */
   --card-border-color: #cccccc; /* Default border color for cards */
+  --card-subheading-company-color:#333333
 }
 
 /* Dark Mode */
@@ -10989,6 +10990,7 @@ section.resume-section .resume-section-content {
   --heading-color: #ffffff; /* Color for headings in dark mode */
   --card-background-color: #222222; /* Background color for cards in dark mode */
   --card-border-color: #555555; /* Border color for cards in dark mode */
+  --card-subheading-company-color:#ffffff
 }
 
 body {
@@ -11281,7 +11283,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Normal state style */
 .subheading .company-name {
-  color: #333;
+  color: var(--card-subheading-company-color);
 }
 
 /* Hover state style */
