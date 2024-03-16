@@ -11111,7 +11111,7 @@ h1, h2, h3, h4, h5, h6 {
 .card {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 1s, transform 1s;
 }
 
 /* Define the animation when the card becomes visible */
@@ -11195,7 +11195,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Media query for screens larger than or equal to 768px */
 @media (max-width: 768px) {
   .contact-container {
-      margin-top: 10px;
+      margin-top: 20px;
       margin-bottom: 20px;
   }
 }
