@@ -11199,3 +11199,10 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 20px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .email-link {
+      word-break: break-all; /* Force words to break */
+  }
+}
