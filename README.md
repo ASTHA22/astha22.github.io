@@ -1,4 +1,4 @@
-Personal Portfolio Project
+Personal Portfolio Project:
 This repository contains the code for my personal portfolio website. The website showcases my professional journey, projects, and technical skills. It features various functionalities to enhance user experience.
 
 Features:
