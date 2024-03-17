@@ -11031,7 +11031,6 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 1 40%; /* 50% width on larger screens */
   padding-left:40px;
   padding-right: 40px; 
-  margin-top: 20px;
   position: relative;
 }
 
