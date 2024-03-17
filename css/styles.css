@@ -11014,6 +11014,11 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   padding: 50px 50px 50px 0;
 }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 50px 50px 0;
+}
 
 
 
@@ -11037,6 +11042,25 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .resume-section-content .about {
+      flex-direction: column; /* Change to column layout for smaller screens */
+      padding: 50px 0; /* Remove padding on mobile */
+      align-items: center;
+  }
+
+  .image-column {
+      order: 2; /* Reorder the image column to come after the text for smaller screens */
+      margin-top: 20px; /* Add space between text and image for smaller screens */
+      flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .text-column {
+      order: 1; /* Reorder the text column to come before the image for smaller screens */
+      flex: 1 1 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-section-content .contact {
       flex-direction: column; /* Change to column layout for smaller screens */
       padding: 50px 0; /* Remove padding on mobile */
       align-items: center;
@@ -11315,35 +11339,39 @@ h1, h2, h3, h4, h5, h6 {
 .dark-mode-toggle i {
   font-size: 30px!important; /* Adjust font size of the moon icon */
 }
-.resume-section-content .about {
+.resume-section-content .about .image-column {
   opacity: 0; /* Initially hide the content */
   transform: translateX(-50px); /* Move the content left initially */
-  transform: translateY(50px); /* Move the content to the down initially */
-  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+  animation: slideIn 1s forwards ease; /* Apply the slide-in animation */
 }
 
-.resume-section-content .about:nth-child(1) {
-  animation-delay: 0.1s; /* Delay animation for the first content element */
+.resume-section-content .about .text-column {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(50px); /* Move the content left initially */
+  animation: slideOut 1s forwards ease; /* Apply the slide-in animation */
 }
 
-.resume-section-content .about:nth-child(2) {
-  animation-delay: 0.3s; /* Delay animation for the second content element */
+.resume-section-content .contact .image-column {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(-50px); /* Move the content left initially */
+  animation: slideIn 1s forwards ease; /* Apply the slide-in animation */
 }
 
-.resume-section-content .about:nth-child(3) {
-  animation-delay: 0.5s; /* Delay animation for the third content element */
+.resume-section-content .contact .text-column {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(50px); /* Move the content left initially */
+  animation: slideOut 1s forwards ease; /* Apply the slide-in animation */
 }
-
 
 .resume-section-content .text-container {
   opacity: 0; /* Initially hide the content */
   transform: translateX(-50px); /* Move the content left initially */
-  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+  animation: slideIn 1s forwards ease; /* Apply the slide-in animation */
 }
 .resume-section-content .image-container {
   opacity: 0; /* Initially hide the content */
   transform: translateX(-50px); /* Move the content left initially */
-  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+  animation: slideIn 1s forwards ease; /* Apply the slide-in animation */
 }
 
 /* Add more rules for additional content elements as needed */
@@ -11359,3 +11387,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+@keyframes slideOut {
+  from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateX(50px); /* Start from below */
+  }
+  to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateX(0); /* Slide up to its original position */
+  }
+}
