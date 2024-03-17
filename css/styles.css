@@ -10980,7 +10980,8 @@ section.resume-section .resume-section-content {
   --heading-color: #333333; /* Default color for headings */
   --card-background-color: #ffffff; /* Default background color for cards */
   --card-border-color: #cccccc; /* Default border color for cards */
-  --card-subheading-company-color:#333333
+  --card-subheading-company-color:#333333;
+  --card-subheading-company-hover-color:#808080;
 }
 
 /* Dark Mode */
@@ -10990,7 +10991,8 @@ section.resume-section .resume-section-content {
   --heading-color: #ffffff; /* Color for headings in dark mode */
   --card-background-color: #222222; /* Background color for cards in dark mode */
   --card-border-color: #555555; /* Border color for cards in dark mode */
-  --card-subheading-company-color:#ffffff
+  --card-subheading-company-color:#ffffff;
+  --card-subheading-company-hover-color:#808080;
 }
 
 body {
@@ -11285,10 +11287,19 @@ h1, h2, h3, h4, h5, h6 {
 .subheading .company-name {
   color: var(--card-subheading-company-color);
 }
-
+.email-link{
+  color: var(--card-subheading-company-color);
+  font-size: 18px;
+  font-weight: bold; 
+  vertical-align: middle; 
+  margin-left: 10px;
+}
+.email-link:hover{
+  color: var(--card-subheading-company-hover-color)!important;
+}
 /* Hover state style */
 .subheading:hover .company-name {
-  color: #1a1e21;
+  color: var(--card-subheading-company-hover-color)!important;
 }
 @media (max-width: 576px) {
   .dark-mode-toggle {
@@ -11304,3 +11315,47 @@ h1, h2, h3, h4, h5, h6 {
 .dark-mode-toggle i {
   font-size: 30px!important; /* Adjust font size of the moon icon */
 }
+.resume-section-content .about {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(-50px); /* Move the content left initially */
+  transform: translateY(50px); /* Move the content to the down initially */
+  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+}
+
+.resume-section-content .about:nth-child(1) {
+  animation-delay: 0.1s; /* Delay animation for the first content element */
+}
+
+.resume-section-content .about:nth-child(2) {
+  animation-delay: 0.3s; /* Delay animation for the second content element */
+}
+
+.resume-section-content .about:nth-child(3) {
+  animation-delay: 0.5s; /* Delay animation for the third content element */
+}
+
+
+.resume-section-content .text-container {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(-50px); /* Move the content left initially */
+  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+}
+.resume-section-content .image-container {
+  opacity: 0; /* Initially hide the content */
+  transform: translateX(-50px); /* Move the content left initially */
+  animation: slideIn 0.5s forwards ease; /* Apply the slide-in animation */
+}
+
+/* Add more rules for additional content elements as needed */
+
+@keyframes slideIn {
+  from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateX(-50px); /* Start from below */
+  }
+  to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateX(0); /* Slide up to its original position */
+  }
+}
+
