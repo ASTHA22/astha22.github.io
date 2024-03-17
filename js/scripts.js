@@ -68,3 +68,14 @@ const observer = new IntersectionObserver(entries => {
 cards.forEach(card => {
     observer.observe(card);
 });
+
+window.addEventListener('scroll', function() {
+    var skillsSection = document.querySelector('.skills_ani');
+    var skillsSectionPosition = skillsSection.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+  
+    if (skillsSectionPosition < windowHeight / 2) {
+      skillsSection.classList.add('show');
+    }
+  });
+  
