@@ -11371,8 +11371,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .resume-section-content .image-container {
   opacity: 0; /* Initially hide the content */
-  transform: translateX(-50px); /* Move the content left initially */
-  animation: slideIn 1s forwards ease; /* Apply the slide-in animation */
+  transform: translateX(50px); /* Move the content left initially */
+  animation: slideOut 1s forwards ease; /* Apply the slide-in animation */
 }
 
 /* Add more rules for additional content elements as needed */
