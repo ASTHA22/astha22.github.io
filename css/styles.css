@@ -11399,3 +11399,13 @@ h1, h2, h3, h4, h5, h6 {
       transform: translateX(0); /* Slide up to its original position */
   }
 }
+.icon-container {
+  padding: 10px!important; /* Adjust the padding around each icon */
+}
+
+.icon-container img {
+  width: 80px!important; /* Adjust the width of the icons */
+  height: 70px!important; /* Adjust the height of the icons */
+  margin-right: 10px!important; /* Adjust the right margin to add spacing between icons */
+  padding: 10px!important;
+}
