@@ -167,10 +167,14 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
-
+@media (max-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
 h2, .h2 {
   font-size: calc(1.475rem + 2.7vw);
 }
@@ -10920,9 +10924,13 @@ p.lead {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* text-transform: uppercase; */
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
-
+@media (max-width: 1200px) {
+  .text-container .subheading {
+    font-size: 1.5rem;
+  }
+}
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
@@ -11408,4 +11416,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px!important; /* Adjust the height of the icons */
   margin-right: 10px!important; /* Adjust the right margin to add spacing between icons */
   padding: 10px!important;
+}
+
+@keyframes wave {
+  0% {
+      transform: rotate(-10deg);
+  }
+  25% {
+      transform: rotate(-10deg);
+  }
+  75% {
+      transform: rotate(10deg);
+  }
+  100% {
+      transform: rotate(-10deg);
+  }
+}
+
+/* Apply waving animation to the image */
+.waving {
+  animation: wave 0.5s infinite;
 }
