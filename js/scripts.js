@@ -61,3 +61,87 @@ const observer = new IntersectionObserver(entries => {
 cards.forEach(card => {
     observer.observe(card);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.blog-carousel');
+  const container = carousel.querySelector('.carousel-container');
+  const cards = carousel.querySelectorAll('.blog-card');
+  const prevBtn = carousel.querySelector('.prev');
+  const nextBtn = carousel.querySelector('.next');
+  const dotsContainer = carousel.querySelector('.dots-container');
+  
+  let currentIndex = 0;
+  let visibleItems = getVisibleItems();
+  
+  // Create dots
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    const numDots = Math.ceil(cards.length / visibleItems);
+    for (let i = 0; i < numDots; i++) {
+      const dot = document.createElement('div');
+      dot.className = `dot ${i === 0 ? 'active' : ''}`;
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+  
+  function getVisibleItems() {
+    if (window.innerWidth >= 992) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
+  }
+  
+  function updateCarousel() {
+    const translateX = -(currentIndex * (100 / visibleItems));
+    container.style.transform = `translateX(${translateX}%)`;
+    
+    // Update dots
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentIndex);
+    });
+    
+    // Update button states
+    prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+    nextBtn.style.opacity = currentIndex >= cards.length - visibleItems ? '0.5' : '1';
+  }
+  
+  function goToSlide(index) {
+    currentIndex = Math.max(0, Math.min(index, cards.length - visibleItems));
+    updateCarousel();
+  }
+  
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < cards.length - visibleItems) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+  
+  // Handle window resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const newVisibleItems = getVisibleItems();
+      if (newVisibleItems !== visibleItems) {
+        visibleItems = newVisibleItems;
+        currentIndex = 0;
+        createDots();
+        updateCarousel();
+      }
+    }, 250);
+  });
+  
+  // Initial setup
+  createDots();
+  updateCarousel();
+});
