@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Astha Singh Thakur</title>
+  <link rel="icon" href="assets/larger-favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog-page.css" />
+  <link rel="stylesheet" href="css/project-cards.css" />
+  <link rel="stylesheet" href="css/services.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <!-- Open Graph meta tags for social media sharing -->
+  <meta property="og:title" content="Astha Singh Thakur | Blog" />
+  <meta property="og:description" content="Welcome to my blog — a space where I share thoughts, projects, and updates from the world of tech." />
+  <meta property="og:image" content="https://testastha.github.io/assets/profile1_c.png" />
+  <meta property="og:url" content="https://testastha.github.io/blog.html" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card meta tags for Twitter sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Astha Singh Thakur | Blog">
+  <meta name="twitter:description" content="Welcome to my blog — a space where I share thoughts, projects, and updates from the world of tech.">
+  <meta name="twitter:image" content="https://testastha.github.io/assets/profile1_c.png">
+</head>
+<body class="blog-page">
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big">
+      <svg height="24" width="24">
+        <circle cx="12" cy="12" r="9" stroke-width="0"></circle>
+      </svg>
+    </div>
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
+  <!-- NAVIGATION BAR (copied from index.html for consistency) -->
+  <nav>
+    <div class="nav-content">
+      <div class="nav-left">
+        <div class="logo">
+          <span>Astha.</span>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="Resume/Resume_Astha.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+  </nav>
+  <div class="blog-title-section">
+    <h1 class="blog-main-title">Blog</h1>
+    <div class="blog-main-desc">Welcome to my blog — a space where I share thoughts, projects, and updates from the world of tech.</div>
+  </div>
+  <div class="lovable-blog-layout">
+    <aside class="lovable-sidebar">
+      <div class="project-categories">
+        <button class="tab-btn">All</button>
+        <button class="tab-btn active">Featured</button>
+        <button class="tab-btn">Hackathons</button>
+        <button class="tab-btn">Events</button>
+        <button class="tab-btn">HealthTech</button>
+        <button class="tab-btn">Analytics</button>
+        <button class="tab-btn">Trends</button>
+        <button class="tab-btn">Updates</button>
+      </div>
+    </aside>
+    <main class="lovable-main">
+      <div class="lovable-blog-grid flat-blog-grid">
+        <!-- Blog Card: Online Safety Reminder: Protect Your Personal Data -->
+        <a href="https://www.linkedin.com/posts/astha-t_linkedinsafety-onlineharassment-dataprivacy-activity-7259373525499617280-8Yih?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all trends" target="_blank">
+          <img src="assets/blog/pd.jpeg" class="flat-blog-img focus-center" alt="Online Safety Reminder: Protect Your Personal Data" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Trends</span>
+            <h2 class="flat-blog-title">🔒 Online Safety Reminder: Protect Your Personal Data</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 5, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Sharing personal data online can invite harassment—stay vigilant and protect your digital boundaries.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Exciting Day at Think Round Inc. -->
+        <a href="https://www.linkedin.com/posts/astha-t_thinkroundinc-teamwork-gratitude-activity-7252115989700435969-AEQL?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/tri.jpeg" class="flat-blog-img focus-midtop" alt="Exciting Day at Think Round Inc." />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Exciting Day at Think Round Inc. 🌟</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Oct 12, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Presented our website progress and supported the social media launch—grateful for an amazing team and impactful collaboration!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Portfolio Website is Live! -->
+        <a href="https://www.linkedin.com/posts/astha-t_portfolio-websitelaunch-gratitude-activity-7176371812975456256-gun0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/op.jpeg" class="flat-blog-img focus-center" alt="Portfolio Website is Live!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">🌐 Portfolio Website is Live!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Mar 21, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Just launched my personal portfolio—excited to showcase my projects and explore new opportunities in software engineering or data science! 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Scaler Masterclass: Building an E-commerce Platform with React -->
+        <a href="https://moonshot.scaler.com/s/sl/COuaHPPD7P" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/scma.png" class="flat-blog-img focus-center" alt="Scaler Masterclass: Building an E-commerce Platform with React" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">Scaler Masterclass: Building an E-commerce Platform with React</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 25, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Completed the Scaler Masterclass on building an e-commerce platform with React, enhancing my skills in React development and building dynamic, responsive applications.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Master's in Computer Science – A Journey of Growth and Gratitude -->
+        <a href="https://www.linkedin.com/posts/astha-t_masteredit-utdalumni-computerscience-activity-7143030674508177408-oKCF?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/grad.jpeg" class="flat-blog-img focus-slightly-top" alt="Master's in Computer Science – A Journey of Growth and Gratitude" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">🎓 Master's in Computer Science – A Journey of Growth and Gratitude 🚀</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 20, 2023</span>
+            </div>
+            <div class="flat-blog-desc">Thrilled to have completed my Master's in Computer Science from UTD, grateful for the experiences, support from mentors, and the incredible library team that made this journey unforgettable!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Grateful for the HackCBRE Hackathon Experience! -->
+        <a href="https://www.linkedin.com/posts/utdcareercenter_huge-thanks-to-everyone-who-participated-ugcPost-7118336108966338560-uRki?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all hackathons" target="_blank">
+          <img src="assets/blog/cbre.jpeg" class="flat-blog-img focus-center" alt="Grateful for the HackCBRE Hackathon Experience!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Hackathons</span>
+            <h2 class="flat-blog-title">🚀 Grateful for the HackCBRE Hackathon Experience! 🎉</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Oct 12, 2023</span>
+            </div>
+            <div class="flat-blog-desc">Had an amazing time participating in the HackCBRE hackathon! It was a fantastic opportunity to collaborate with talented individuals, explore new ideas, and contribute to innovative solutions. Huge thanks to the University Career Center (UCC) and CBRE for their mentorship and support throughout the event. Looking forward to more experiences like this!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Node-RED: Basics to Bots Certification by IBM -->
+        <a href="https://www.credly.com/badges/761d843a-1a6f-4dd0-a8eb-0bc64f2fef46/linked_in" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/ibmnr.png" class="flat-blog-img focus-top" alt="Node-RED: Basics to Bots Certification by IBM" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">🎓 Node-RED: Basics to Bots Certification by IBM</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jul 2, 2018</span>
+            </div>
+            <div class="flat-blog-desc">Earned certification in creating applications using Node-RED, including REST APIs, Watson cognitive services, and Facebook Messenger bots.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: SF Python Meetup at GitHub – What a Night! -->
+        <a href="https://www.linkedin.com/posts/astha-t_python-opensource-sfpython-activity-7264468823351730176-ivMp?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/sfp.jpeg" class="flat-blog-img focus-midtop" alt="SF Python Meetup at GitHub – What a Night!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🐍 SF Python Meetup at GitHub – What a Night!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 19, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had an amazing time diving into open-source with Pallets Projects and connecting with fellow Pythonistas last week!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Bay Area Coders Collective: Cloud & AI Talks with Googlers! -->
+        <a href="https://www.linkedin.com/posts/astha-t_bayareacoders-googlecloud-ai-activity-7263379470357573633-oDdZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/bac.jpeg" class="flat-blog-img focus-midtop" alt="Bay Area Coders Collective: Cloud & AI Talks with Googlers!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🚀 Bay Area Coders Collective: Cloud & AI Talks with Googlers!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 16, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had a blast learning about BigQuery, Cloud Run with GPUs, and AI-powered tools from the experts at Google—can’t wait to apply it all!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: AI Debate: Acceleration vs. Safety – Finding the Right Balance -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-artificialintelligence-techdebate-activity-7262252087697133568-jnpt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/city.jpeg" class="flat-blog-img focus-midtop" alt="AI Debate: Acceleration vs. Safety – Finding the Right Balance" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🤖 AI Debate: Acceleration vs. Safety – Finding the Right Balance</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 12, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Attended a powerful discussion with the SuperHuman Society on the future of AI—how do we innovate fast while keeping ethics and safety in check?</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Inspired at WiDS 2024 with IBM! -->
+        <a href="https://www.linkedin.com/posts/astha-t_wids2024-womenintech-datascience-activity-7261942845471694848-cWB0?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/wids.jpeg" class="flat-blog-img focus-center" alt="Inspired at WiDS 2024 with IBM!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">💫 Inspired at WiDS 2024 with IBM!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Oct 30, 2024</span>
+            </div>
+            <div class="flat-blog-desc">An unforgettable day of learning, connection, and celebrating women driving innovation in data science and AI. 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Figma x GitHub Dev Meetup Vibes! -->
+        <a href="https://www.linkedin.com/posts/astha-t_figma-github-copilot-activity-7260410114338168834-IZyh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/fig.jpeg" class="flat-blog-img focus-center" alt="Figma x GitHub Dev Meetup Vibes!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🎨🤖 Figma x GitHub Dev Meetup Vibes!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Oct 29, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Loved diving into design-to-code magic, Copilot Workspace innovations, and connecting with fellow devs and designers in SF last week! 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Unlocking CRM Analytics – New Series Launch! -->
+        <a href="https://www.linkedin.com/posts/astha-t_crmanalytics-datadrivenmarketing-customerengagement-activity-7270497186067410945-5hb-?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all analytics" target="_blank">
+          <img src="assets/blog/crm1.jpg" class="flat-blog-img focus-center" alt="Unlocking CRM Analytics – New Series Launch!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Analytics</span>
+            <h2 class="flat-blog-title">📊 Unlocking CRM Analytics – New Series Launch!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 5, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Kicking off a series on how CRM analytics powers growth through segmentation, personalization, and predictive insights—backed by real-world experience with Fortune 500 brands!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: SF Founders Brew Mixer -->
+        <a href="https://www.linkedin.com/posts/astha-t_networking-sffoundersbrewmixer-startups-activity-7267621238544445441-sSAX?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/sfbm.jpeg" class="flat-blog-img focus-center" alt="SF Founders Brew Mixer – Great Vibes & Conversations!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🍻 SF Founders Brew Mixer – Great Vibes & Conversations! </h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 27, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Connected with brilliant founders and innovators over drinks, ideas, and inspiring startup stories at a fantastic SF mixer!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: The Breast Cancer Challenge -->
+        <a href="https://lnkd.in/gypN2VET" class="flat-blog-card" data-category="all healthtech" target="_blank">
+          <img src="assets/blog/ml.png" class="flat-blog-img focus-top" alt="The Breast Cancer Challenge – A Global Health Priority" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">HealthTech</span>
+            <h2 class="flat-blog-title">📚 The Breast Cancer Challenge – A Global Health Priority</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 26, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Kicking off my new series with an overview of breast cancer, diagnosis challenges, and the critical role AI can play in early detection.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Joined the Google Developer Program -->
+        <a href="https://www.linkedin.com/posts/astha-t_joined-the-google-developer-program-google-activity-7266525989961105408-KOrA?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/gdg.png" class="flat-blog-img focus-center" alt="Joined the Google Developer Program!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">🚀 Joined the Google Developer Program!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 24, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Thrilled to kick off this new journey with Google, dive into new tools, and connect with an amazing global developer community.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: Built an AI Chatbot Using Zoom + Cerebras -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-machinelearning-zoomdevelopers-activity-7266163600996593664-tRk_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/zoom.jpeg" class="flat-blog-img focus-center" alt="Built an AI Chatbot Using Zoom + Cerebras!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🌟 Built an AI Chatbot Using Zoom + Cerebras!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 23, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had a blast at the AWS GenAI Loft workshop learning to create AI-powered chatbots with the Zoom Developer Platform and Cerebras' cutting-edge tech.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card: AI for Developers #20 – Event Recap -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-machinelearning-generativeai-activity-7265838497897283584-V2nx?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aid20.jpeg" class="flat-blog-img focus-midtop" alt="AI for Developers #20 – Event Recap!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🌟 AI for Developers #20 – Event Recap!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 22, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Loved learning about Databricks Agents, Gemini, and enterprise AI search at AI for Developers #20—plus great convos with fellow devs! 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 1: Hackathons -->
+        <a href="https://www.linkedin.com/posts/astha-t_hackforsocialimpact-affordablehousing-techforgood-activity-7262641440713826305-njLv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all hackathons featured" target="_blank">
+          <img src="assets/gallery/img11.jpg" class="flat-blog-img object-top" alt="Top 3 - Hack for Social Impact" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Hackathons</span>
+            <h2 class="flat-blog-title">Top 3 - Hack for Social Impact</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 10, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Top 3 at Hack for Social Impact by Terner Institute, with Fetch.ai, for Fetch Compare Build—a tech solution simplifying California housing codes to support affordable housing.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 2: Events -->
+        <a href="https://www.linkedin.com/posts/astha-t_sfpython-python-machinelearning-activity-7283649231607775232-as_m/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card blog-img-zoom" data-category="all events featured" target="_blank">
+          <img src="assets/gallery/img13.jpg" class="flat-blog-img" alt="My Talk at SF Python!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">My Talk at SF Python!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 11, 2025</span>
+            </div>
+            <div class="flat-blog-desc">Spoke at SF Python on my journey from Machine Learning to Full-Stack Development, sharing insights on Python, AI, and LLMs with the vibrant tech community.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 3: HealthTech -->
+        <a href="https://www.linkedin.com/pulse/from-diagnosis-precision-future-ai-breast-cancer-detection-thakur-s3z7c/?trackingId=8qE8oUl1LiA%2F%2FOH1G0i6Dw%3D%3D" class="flat-blog-card" data-category="all healthtech featured" target="_blank">
+          <img src="assets/blog/ml.png" class="flat-blog-img" alt="Fighting Cancer with ML" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">HealthTech</span>
+            <h2 class="flat-blog-title">Fighting Cancer with ML</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 17, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Concluded my ML in Breast Cancer series with key insights on SVMs, diagnostic challenges, and the future of AI-human collaboration in healthcare.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 4: Events -->
+        <a href="https://www.linkedin.com/posts/astha-t_networking-ai-founders-activity-7293433813802618880-Ueef/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events featured" target="_blank">
+          <img src="assets/blog/vcn.jpg" class="flat-blog-img focus-slightly-top" alt="Co-Host - SF AI Founders & VC Networking Event" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Co-Host - SF AI Founders & VC Networking Event</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Feb 7, 2025</span>
+            </div>
+            <div class="flat-blog-desc">Co-hosted the SF AI Founders & VC Networking event—an inspiring night of conversations, connections, and collaboration in the AI space!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 5: The Open Source Afterparty -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-machinelearning-datascience-activity-7305366394215223296-ea5k?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/osp.jpg" class="flat-blog-img" alt="The Open Source Afterparty" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">The Open Source Afterparty</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Mar 11, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A recap of the Data for AI: Open Source Afterparty in SF, featuring expert talks on graph databases, AI integration, open-source ML tools, and cutting-edge innovations in data infrastructure.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 6: Coffee with Builders -->
+        <a href="https://www.linkedin.com/posts/astha-t_networking-ai-techcommunity-activity-7292325524524122113-6g-u?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/cb.jpg" class="flat-blog-img" alt="Coffee with Builders: Connecting Minds in Tech" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Coffee with Builders: Connecting Minds in Tech</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Feb 3, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A vibrant networking event in SF bringing together AI innovators, founders, and tech leaders to spark ideas and future collaborations.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 7: The Rippling Michelin Experience -->
+        <a href="https://www.linkedin.com/posts/astha-t_networking-michelinexperience-sanfranciscoevents-activity-7290911144639556736-P86K?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/bs.jpeg" class="flat-blog-img" alt="The Rippling Michelin Experience: Connections Over Cuisine" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">The Rippling Michelin Experience: Connections Over Cuisine</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 31, 2025</span>
+            </div>
+            <div class="flat-blog-desc">An unforgettable evening at Birdsong hosted by Rippling, bringing together finance leaders for meaningful conversations and a world-class culinary journey in San Francisco.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 8: All Things Web @ Sanity -->
+        <a href="https://www.linkedin.com/posts/astha-t_allthingsweb-techcommunity-webdevelopment-activity-7290500888572411904-K9V4?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/tw.jpeg" class="flat-blog-img" alt="All Things Web @ Sanity: Tech, Twitter & Demos" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">All Things Web @ Sanity: Tech, Twitter & Demos</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 29, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A fun and insightful evening at Sanity’s All Things Web event, featuring talks on tech career growth, exciting product demos, and networking with the vibrant web dev community in SF.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 9: AI for Developers -->
+        <a href="https://www.linkedin.com/posts/astha-t_aifordevelopers-generativeai-machinelearning-activity-7290175030141796353-LOlt?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aid.jpeg" class="flat-blog-img" alt="AI for Developers: Deep Dive into LLMs & Future AI" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">AI for Developers: Deep Dive into LLMs & Future AI</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 28, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A powerful AI-focused event in San Francisco with expert talks on LLMs, phone call AI, and the future of AI development, featuring demos, insights, and networking opportunities with top developers in the field.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 10: AI After Hours -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-machinelearning-technetworking-activity-7286472422025834496-crdR?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/hy.jpeg" class="flat-blog-img" alt="AI After Hours: Innovation & Collaboration in SF" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">AI After Hours: Innovation & Collaboration in SF</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 18, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A dynamic evening at AI After Hours in San Francisco with keynotes and discussions from AI leaders at Hugging Face, Hyperbolic, LMSYS, and Quora, exploring the future of AI and fostering collaboration in the tech community.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 11: Data for AI: Open Source Afterparty Highlights -->
+        <a href="https://www.linkedin.com/posts/astha-t_dataforai-opensource-ai-activity-7286130551759978496-sOsr?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/af.jpeg" class="flat-blog-img" alt="Data for AI: Open Source Afterparty Highlights" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Data for AI: Open Source Afterparty Highlights</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 17, 2025</span>
+            </div>
+            <div class="flat-blog-desc">An inspiring evening at the Data for AI Open Source Afterparty in San Francisco, featuring talks on AI-driven tech, data infrastructure, and multimodal models, plus exciting networking with AI innovators and professionals.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 12: Networking Walk: Women’s Health & Innovation at Salesforce Park -->
+        <a href="https://www.linkedin.com/posts/astha-t_womenshealth-femtech-innovation-activity-7285871491869556736-mINn?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/wa.jpeg" class="flat-blog-img" alt="Networking Walk: Women’s Health & Innovation at Salesforce Park" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Networking Walk: Women’s Health & Innovation at Salesforce Park</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 16, 2025</span>
+            </div>
+            <div class="flat-blog-desc">An inspiring Women’s Health Networking Walk at Salesforce Park, where I connected with leaders in femtech, shared meaningful conversations, and explored the future of women’s health innovation in a beautiful, peaceful setting.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 13: Networking at SF Healthcare AI Founder & VC Event -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-healthcareinnovation-networking-activity-7284977579323748354-qP7W?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/vc.jpeg" class="flat-blog-img" alt="Networking at SF Healthcare AI Founder & VC Event" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Networking at SF Healthcare AI Founder & VC Event</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 14, 2025</span>
+            </div>
+            <div class="flat-blog-desc">An energizing evening at the SF Healthcare AI Founder & VC Networking event during J.P. Morgan HealthTech Week, connecting with innovators, founders, and investors to explore collaboration and opportunities in AI and healthcare.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 14: Cold Start Demo Day: Innovators Unveil Game-Changing Tech -->
+        <a href="https://www.linkedin.com/posts/astha-t_coldstart-demoday-foundersinc-activity-7284631335548174338-JtCI?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/cd.jpeg" class="flat-blog-img" alt="Cold Start Demo Day: Innovators Unveil Game-Changing Tech" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Cold Start Demo Day: Innovators Unveil Game-Changing Tech</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 13, 2025</span>
+            </div>
+            <div class="flat-blog-desc">An inspiring Cold Start Demo Day at Founders, Inc., where 75 talented builders showcased their AI, robotics, and gaming innovations after 30 days of intense work, pushing the boundaries of entrepreneurship and technology.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 15: AI Dev Tools Night -->
+        <a href="https://www.linkedin.com/posts/astha-t_aidevtools-networking-techcommunity-activity-7282872594402365440-ON7q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/cf.jpeg" class="flat-blog-img focus-center" alt="AI Dev Tools Night: Connecting Innovators at Cloudflare HQ" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">AI Dev Tools Night: Connecting Innovators at Cloudflare HQ</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 8, 2025</span>
+            </div>
+            <div class="flat-blog-desc">A thrilling evening at Cloudflare HQ where AI enthusiasts gathered for lightning talks on performance optimization, AI agents, and open-source solutions. Special mention to YK Sugi, whose CS Dojo coding videos helped me level up my skills! Looking forward to more innovation in AI. 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 16: 2025 Tech Trends: Shaping the Future -->
+        <a href="https://www.linkedin.com/posts/astha-t_techtrends-ai-blockchain-activity-7282133737109123072-Ob6X?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all trends" target="_blank">
+          <img src="assets/blog/tn.jpg" class="flat-blog-img" alt="2025 Tech Trends: Shaping the Future" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Trends</span>
+            <h2 class="flat-blog-title">2025 Tech Trends: Shaping the Future</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Jan 6, 2025</span>
+            </div>
+            <div class="flat-blog-desc">AI, blockchain, space exploration, and sustainability are set to redefine the tech landscape in 2025. What excites you the most?</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 17: Google Developer Experts follower badge -->
+        <a href="https://developers.google.com/profile/badges/community/gde/follower/#main-content" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/gdp.png" class="flat-blog-img" alt="Just got the Google Developer Experts follower badge! 🎉" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">Just got the Google Developer Experts follower badge! 🎉</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 29, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Excited to be part of the community and looking forward to learning more along the way. 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 18: Empowered by the She Builds AI Campaign -->
+        <a href="https://www.linkedin.com/posts/astha-t_she-builds-ai-campaign-discovery-google-activity-7278572398977658880-KTaS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/wt.png" class="flat-blog-img" alt="Empowered by the She Builds AI Campaign: Supporting Women in Tech! 🌟" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">Empowered by the She Builds AI Campaign: Supporting Women in Tech! 🌟</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 30, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Inspired by the She Builds AI campaign by Women Techmakers, supporting women in AI and tech with valuable resources and community! 🌟</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 19: Unlocking the Power of CRM Analytics -->
+        <a href="https://www.linkedin.com/posts/astha-t_unlockingthepower-crmanalytics-aiincrm-activity-7278253034529284098-Grl-?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all analytics" target="_blank">
+          <img src="assets/blog/crm4.jpg" class="flat-blog-img" alt="Unlocking the Power of CRM Analytics 🚀" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Analytics</span>
+            <h2 class="flat-blog-title">Unlocking the Power of CRM Analytics 🚀</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 27, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Explore how AI and predictive analytics are transforming CRM strategies for better customer engagement, targeting, and personalization.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 20: HolidayAI Recap -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-generativeai-machinelearning-activity-7277397647341060096-Ifec?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/ha.jpeg" class="flat-blog-img focus-center" alt="HolidayAI Recap: AI Talks & Networking with OpenAI, Swyx, CRV, and Cloudflare" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🎉 HolidayAI Recap: AI Talks & Networking with OpenAI, Swyx, CRV, and Cloudflare 🎉</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 24, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Reflecting on an amazing evening at HolidayAI, where we dove into AI advancements with experts from OpenAI, Swyx, CRV, and Cloudflare. Great networking and insights on AI’s future in e-commerce and more!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 21: AI For Developers #21 Recap -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-generativeai-machinelearning-activity-7277111717719863296-Unr4?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aid21.jpeg" class="flat-blog-img" alt="Exciting Recap from AI For Developers #21" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🌟 Exciting Recap from AI For Developers #21 🌟</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 23, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had an amazing time at AI for Developers #21 in San Francisco! Deep dives into AI, machine learning, and generative AI with experts like Sinan Ozdemir, Sri Bala, and Laxmi Harikumar. Great networking and learning from the community!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 22: Unlocking the Power of CRM Analytics: The Data-Backed ROI Story -->
+        <a href="https://www.linkedin.com/posts/astha-t_crmanalytics-roi-datadrivenmarketing-customerengagement-activity-7275690356044677121-o8wf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all analytics" target="_blank">
+          <img src="assets/blog/crm3.jpg" class="flat-blog-img" alt="Unlocking the Power of CRM Analytics: The Data-Backed ROI Story" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Analytics</span>
+            <h2 class="flat-blog-title">Unlocking the Power of CRM Analytics: The Data-Backed ROI Story</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 20, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Explore how CRM analytics is delivering impressive ROI across industries like retail, financial services, and healthcare with real-world case studies, key metrics, and implementation best practices for boosting business growth.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 23: Humiris Launch Party -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-humirislaunch-innovation-activity-7274556857728294912-7QQH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/hl.jpeg" class="flat-blog-img focus-center" alt="What a Blast at the Humiris Launch Party!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🎉 What a Blast at the Humiris Launch Party! 🎉</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 16, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Incredible night of AI innovation, live demos, and meaningful conversations on ethics, sustainability, and the future of Agentic AI—Humiris is definitely one to watch! 🚀</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 24: AI x Future of Work v.3 Recap 🚀 -->
+        <a href="https://www.linkedin.com/posts/astha-t_aiify-ontologyofvalue-ai-activity-7274250067908173828-hcVk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aiify.jpeg" class="flat-blog-img focus-top" alt="AI x Future of Work v.3 Recap 🚀" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">AI x Future of Work v.3 Recap 🚀</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 16, 2024</span>
+            </div>
+            <div class="flat-blog-desc">A dynamic event by Aiify.io, Ontology of Value, and Fetch.ai Innovation Lab exploring AI’s impact on careers, skills, and the workforce of tomorrow.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 25: Cloud, AI & Data Talks with Googlers ☁️🤖 -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-cloud-dataanalytics-activity-7273849520994623488-vFLn?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/google.jpeg" class="flat-blog-img" alt="Cloud, AI & Data Talks with Googlers ☁️🤖" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Cloud, AI & Data Talks with Googlers ☁️🤖</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 15, 2024</span>
+            </div>
+            <div class="flat-blog-desc">An inspiring evening in SF diving into AI coding, real-time data, and cloud innovation—huge thanks to Google Developer Relations for the insights and connections!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 26: AI Video Gen Hackathon Recap 🎥💡 -->
+        <a href="https://www.linkedin.com/posts/astha-t_heygen-genaicollective-aihackathon-activity-7273437412930854913-qzHk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all hackathons" target="_blank">
+          <img src="assets/img/step0.jpg" class="flat-blog-img" alt="AI Video Gen Hackathon Recap 🎥💡" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Hackathons</span>
+            <h2 class="flat-blog-title">AI Video Gen Hackathon Recap 🎥💡</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 13, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Built a virtual doctor prototype at the HeyGen x GenAI Collective Hackathon—an exciting step toward AI-powered healthcare innovation!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 27: Unlocking CRM Analytics for Growth 📊 -->
+        <a href="https://www.linkedin.com/posts/astha-t_crmanalytics-customerretention-netpromoterscore-activity-7273143953346969600-qfwy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all analytics" target="_blank">
+          <img src="assets/blog/crm2.jpg" class="flat-blog-img" alt="Unlocking CRM Analytics for Growth 📊" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Analytics</span>
+            <h2 class="flat-blog-title">Unlocking CRM Analytics for Growth 📊</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 12, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Exploring key CRM metrics like CLV, NPS, and retention rates to drive smarter, data-driven decisions and build stronger customer relationships.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 28: WTM SF End of Year Celebration 🎉💻 -->
+        <a href="https://www.linkedin.com/posts/astha-t_womenintech-wtmsf-networking-activity-7272724191328575488-v0Uz?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/wtm.jpeg" class="flat-blog-img" alt="WTM SF End of Year Celebration 🎉💻" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">WTM SF End of Year Celebration 🎉💻</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 11, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Celebrated an inspiring evening with Women Techmakers SF—connecting with amazing women in tech, learning from AI-driven talks, and exploring new opportunities for 2025!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 29: SVM: Revolutionizing Tumor Detection -->
+        <a href="https://lnkd.in/g_j5-wip" class="flat-blog-card" data-category="all healthtech" target="_blank">
+          <img src="assets/blog/ml.png" class="flat-blog-img" alt="SVM: Revolutionizing Tumor Detection" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">HealthTech</span>
+            <h2 class="flat-blog-title">SVM: Revolutionizing Tumor Detection</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 10, 2024</span>
+            </div>
+            <div class="flat-blog-desc">A deep dive into how Support Vector Machines are driving breakthroughs in breast cancer diagnostics with high accuracy, even on small datasets.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 30: Building the Future at the Voice & Video AI Agents Hackathon -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-hackathon-voiceai-activity-7272006117927346176-ZvoO?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all hackathons" target="_blank">
+          <img src="assets/blog/vhc.jpeg" class="flat-blog-img focus-center" alt="Building the Future at the Voice & Video AI Agents Hackathon" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Hackathons</span>
+            <h2 class="flat-blog-title">Building the Future at the Voice & Video AI Agents Hackathon 🎯🤖</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 9, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had a blast building an AI-powered voice & video solution for eCommerce with an incredible team—grateful for the innovation, insights, and community at this unforgettable SF hackathon!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 31: AI After Hours: Innovation Meets Celebration -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-artificialintelligence-blockchain-activity-7271670544125575168-MGS8?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aih.jpeg" class="flat-blog-img" alt="AI After Hours: Innovation Meets Celebration" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">AI After Hours: Innovation Meets Celebration 🎉🤖</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 8, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Explored decentralized AI, connected with brilliant minds, and gained fresh inspiration at Hyperbolic & Sahara AI’s vibrant community event in San Francisco!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 32: Mastering Multi-Agent Systems at GitHub -->
+        <a href="https://www.linkedin.com/posts/astha-t_github-developerbootcamp-multiagentsystems-activity-7271223508842508290-ersu?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/gh.jpeg" class="flat-blog-img" alt="Mastering Multi-Agent Systems at GitHub" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">Mastering Multi-Agent Systems at GitHub 🚀💡</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 7, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Built skills in CrewAI, RAG, and agent evaluation at GitHub’s Developer Bootcamp—an inspiring night of learning, networking, and leveling up in the world of AI agents!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 33: 🚀 Diving into RAG, LLMs & Multimodal AI at the Unstructured Data Meetup! -->
+        <a href="https://www.linkedin.com/posts/astha-t_unstructureddata-generativeai-machinelearning-activity-7270874649318559746-rORv?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/az.jpeg" class="flat-blog-img" alt="Diving into RAG, LLMs & Multimodal AI at the Unstructured Data Meetup!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🚀 Diving into RAG, LLMs & Multimodal AI at the Unstructured Data Meetup!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 6, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Attended an amazing event hosted by Zilliz at Airbyte, where I learned from industry leaders and explored innovations in unstructured data. From building high-accuracy RAG systems to exploring multimodal AI with TableGPT2, this meetup was packed with actionable insights—and I’m already applying some ideas in my own projects!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 34: AI Consumer Products Meetup – Empowering Through Innovation -->
+        <a href="https://www.linkedin.com/posts/astha-t_ai-consumertech-generativeai-activity-7270219046929756160-KcVj?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/aic.png" class="flat-blog-img" alt="AI Consumer Products Meetup – Empowering Through Innovation" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🚀 AI Consumer Products Meetup – Empowering Through Innovation</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 4, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Explored exciting new tools in AI-powered consumer tech and shared insights from my own builds in the space!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 35: ML Techniques Revolutionizing Breast Cancer Diagnosis -->
+        <a href="https://lnkd.in/geHe_BwR" class="flat-blog-card" data-category="all healthtech" target="_blank">
+          <img src="assets/blog/ml.png" class="flat-blog-img" alt="ML Techniques Revolutionizing Breast Cancer Diagnosis" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">HealthTech</span>
+            <h2 class="flat-blog-title">ML Techniques Revolutionizing Breast Cancer Diagnosis</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 3, 2024</span>
+            </div>
+            <div class="flat-blog-desc">A deep dive into how top machine learning models like SVM and ANN are improving accuracy and cutting costs in cancer diagnostics.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 36: From Gold Rush to Tech Boom: Exploring SF’s Hidden History -->
+        <a href="https://www.linkedin.com/posts/astha-t_goldrush-sanfranciscohistory-exploresf-activity-7269181744648540160-6QsQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all trends" target="_blank">
+          <img src="assets/blog/sf.jpeg" class="flat-blog-img" alt="From Gold Rush to Tech Boom: Exploring SF’s Hidden History" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Trends</span>
+            <h2 class="flat-blog-title">🏙️ From Gold Rush to Tech Boom: Exploring SF’s Hidden History</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Dec 2, 2024</span>
+            </div>
+            <div class="flat-blog-desc">A walk through San Francisco's past reveals a wild transformation from a sleepy village to a global city—complete with buried ships and gold fever.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 37: Joined Google’s Women Techmakers Program! -->
+        <a href="https://www.linkedin.com/posts/astha-t_women-techmakers-member-google-developer-activity-7268337928274087936-eK7v?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all updates" target="_blank">
+          <img src="assets/blog/wtmb.png" class="flat-blog-img" alt="Joined Google’s Women Techmakers Program!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Updates</span>
+            <h2 class="flat-blog-title">🌟 Joined Google’s Women Techmakers Program!</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 30, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Excited to be part of a global community empowering women in tech with resources, events, and opportunities for growth.</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+        <!-- Blog Card 38: Attended DevsGiving at Cloudflare! -->
+        <a href="https://www.linkedin.com/posts/astha-t_devsgiving-thanksgiving-techcommunity-activity-7267960478931255296-askQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8" class="flat-blog-card" data-category="all events" target="_blank">
+          <img src="assets/blog/chq.jpeg" class="flat-blog-img" alt="Attended DevsGiving at Cloudflare!" />
+          <div class="flat-blog-content">
+            <span class="flat-blog-category">Events</span>
+            <h2 class="flat-blog-title">🍂 Attended DevsGiving at Cloudflare! 🍂</h2>
+            <div class="flat-blog-meta-row">
+              <span class="flat-blog-date">Nov 28, 2024</span>
+            </div>
+            <div class="flat-blog-desc">Had an amazing time at DevsGiving, where we explored cutting-edge tech like Cloudflare Workers, Hono.js, and the HONC stack, while connecting with fellow developers!</div>
+            <span class="flat-blog-readmore">Read more →</span>
+          </div>
+        </a>
+      </div>
+    </main>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section name-section">
+        <h2>Astha Singh<br>Thakur</h2>
+        <!-- <a href="mailto:asthasingh2066@gmail.com" class="email-link">asthasingh2066@gmail.com</a> -->
+        <a href="#" style="color: #7B68EE;">San Francisco, CA</a>
+        <div class="resume-link">
+          Also, here's a cool sheet of paper - <a href="Resume/Resume_Astha.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Explore</h3>
+        <a href="about.html#experience">Work</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#projects">Project</a>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <a href="mailto:asthasingh2066@gmail.com">Email</a>
+        <a href="tel:+14698197543">Phone</a>
+        <a href="https://calendly.com/asthat/30min" target="_blank">Calendly</a>
+      </div>
+      <div class="footer-section">
+        <h3>Social</h3>
+        <a href="https://www.linkedin.com/in/astha-t/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ASTHA22" target="_blank">GitHub</a>
+        <a href="https://leetcode.com/u/Astha_22/" target="_blank">Leetcode</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Made with ❤️ by Astha</p>
+    </div>
+  </footer>
+  <script src="js/blog.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

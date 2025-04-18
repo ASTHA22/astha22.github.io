@@ -1,1257 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio Astha Thakur</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astha Singh Thakur</title>
+    <link rel="icon" href="assets/larger-favicon.png" />
+    <!-- Add Allura font for website (not needed for favicon anymore) -->
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
-        <!-- Open Graph meta tags for social media sharing -->
-       <meta property="og:title" content="Hi, I am Astha " />
-       <meta property="og:description" content="Portfolio Astha Thakur" />
-       <meta property="og:url" content="https://astha22.github.io/" />
-       <meta property="og:image" content="https://astha22.github.io/assets/img/astha_26jan.jpg" />
-       <meta property="og:type" content="website" />	
-
-	<!-- Twitter Card meta tags -->
-    	<meta name="twitter:card" content="summary_large_image" />
-    	<meta name="twitter:title" content="Hi, I am Astha " />
-    	<meta name="twitter:description" content="Portfolio Astha Thakur" />
-    	<meta name="twitter:image" content="https://astha22.github.io/assets/img/astha_26jan.jpg" />    
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" /> -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;800&display=swap" rel="stylesheet" type="text/css">
-
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script async src="//static.getclicky.com/101446712.js"></script>
-        <script async data-id="101446712" src="/b18925223899.js"></script>
-    </head>
-
-    <body id="page-top">                
-        
-        <!-- Moon icon for dark mode -->
-        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
-            <i class="fas fa-moon" title="Dark/Light mode" style="font-size:30px"></i>
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Astha Singh Thakur" />
+    <meta property="og:description" content="Hi, I am Astha 👋 | Bridging full-stack engineering with intelligent AI systems." />
+    <meta property="og:image" content="https://testastha.github.io/assets/profile1_c.png" />
+    <meta property="og:url" content="https://testastha.github.io/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card meta tags for Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Astha Singh Thakur">
+    <meta name="twitter:description" content="Hi, I am Astha 👋 | Bridging full-stack engineering with intelligent AI systems.">
+    <meta name="twitter:image" content="https://testastha.github.io/assets/profile1_c.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project-cards.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script async src="//static.getclicky.com/101446712.js"></script>
+    <script async data-id="101446712" src="/b18925223899.js"></script>
+</head>
+<body>
+    <div class="cursor">
+        <div class="cursor__ball cursor__ball--big">
+            <svg height="24" width="24">
+                <circle cx="12" cy="12" r="9" stroke-width="0"></circle>
+            </svg>
         </div>
-        
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <span class="nav-pic" style="margin-right: 5px;">
-                        <img src="assets/img/favicon.ico" alt="Favicon" width="30" height="30" style="border: 0.1rem solid rgba(93, 107, 167, 0.4); border-radius: 50%;">
-                        Astha Singh Thakur
-                    </span>
-                </a>                    
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div class="cursor__ball cursor__ball--small">
+            <svg height="10" width="10">
+                <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+            </svg>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <div class="logo">
+                    <span>Astha.</span>
+                </div>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon moon-icon"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>     
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#accolades">Accolades</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li>    
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                        <!-- Resume button -->
-                        <li class="nav-item">
-                            <a href="Resume/Resume_Astha.pdf" target="_blank" rel="noopener noreferrer" class="nav-link btn btn-primary d-none d-lg-inline-block" style="color: #ffff; border-radius:10px;font-size: 14px;">Resume</a>
-                            <a href="Resume/Resume_Astha.pdf" target="_blank" rel="noopener noreferrer" class="nav-link custom-btn-color d-lg-none" style="color: #5D6BA7!important; width:100px;text-align:center;border-radius:10px">Resume</a>
-                        </li>
-                    </ul>
-                    <!-- <div class="floating-dark-mode-toggle">
-                        <div class="form-check form-switch d-inline-block">
-                            <input class="form-check-input" type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
-                            <label class="form-check-label" for="darkModeToggle" style="color: #ffff;">
-                            </label>
-                        </div>
-                    </div> -->
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="#projects">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="Resume/Resume_Astha.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </nav>
 
-
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="title-wrapper">
+                    <span class="brackets">{</span>
+                    <span class="dynamic-text"></span>
+                    <span class="cursor"></span>
+                    <span class="brackets">}</span>
+                </div>
+                <div class="content-bottom">
+                    <div class="hero-text">
+                        <p>Full Stack Developer, AI Engineer, Data Scientist with <strong>5+</strong> years of experience building AI-driven systems & scalable web apps. Skilled in Full Stack, GenAI, ML models, & data, with a proven track record working with Fortune 100 & 500 companies to optimize growth.</p>
+                        <br>
+                        <p>Passionate about tech innovation, leading teams, & being a public speaker.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/astha-t/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ASTHA22" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:asthasingh220697@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://calendly.com/asthat/30min" target="_blank" aria-label="Calendly">
+                            <iconify-icon icon="simple-icons:calendly" style="color: currentColor;"></iconify-icon>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-content">
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Fortune 500 Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Developers Led</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label">Research Contributions</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-content">
+                <h2>Services</h2>
+                <div class="services-wrapper">
+                    <button class="research-control prev-arrow" aria-label="Previous service">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="services-container">
+                        <div class="service-card card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3 class="card-title">Frontend Development</h3>
+                            <ul>
+                                <li><a>React & JavaScript applications</a></li>
+                                <li><a>Responsive UI with Bootstrap</a></li>
+                                <li><a>UI/UX design with Figma</a></li>
+                                <li><a>Interactive web experiences</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-card card">
+                            <i class="fas fa-cogs"></i>
+                            <h3 class="card-title">Backend Development</h3>
+                            <ul>
+                                <li><a>Python, Java & Node.js APIs</a></li>
+                                <li><a>Cloud services (GCP, Azure)</a></li>
+                                <li><a>Database optimization</a></li>
+                                <li><a>Containerization with Docker</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-card card">
+                            <i class="fas fa-network-wired"></i>
+                            <h3 class="card-title">AI/ML Development</h3>
+                            <ul>
+                                <li><a>Custom ML models</a></li>
+                                <li><a>Recommendation engines</a></li>
+                                <li><a>LLM fine-tuning</a></li>
+                                <li><a>AI agent integration</a></li>
+                            </ul>
+                        </div>
+                        <div class="service-card card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3 class="card-title">Data Science & Analytics</h3>
+                            <ul>
+                                <li><a>Customer segmentation</a></li>
+                                <li><a>Predictive modeling</a></li>
+                                <li><a>CRM analytics</a></li>
+                                <li><a>BigQuery & SQL optimization</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="research-control next-arrow" aria-label="Next service">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="services-dots"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-content">
+                <h2>My Projects</h2>
                 
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- Home-->
-            <section class="resume-section d-flex justify-content-center align-items-center" id="home">
-                <div class="resume-section-content">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="text-container">
-                                <h1>
-                                    <span>Hi, I am Astha <img class="mb-3 waving" alt="" src="assets/img/emoji.png" style="width: 120px; position: relative; height: 60px;"/></span>
-                                </h1>
-                                <div class="subheading mb-2">
-                                    <a class="text-primary" style="text-decoration:none;">Software Engineer | ML Engineer | Data Scientist | Business Analyst</a>
+                <!-- Project Categories -->
+                <div class="project-categories">
+                    <button class="tab-btn" data-category="all">All</button>
+                    <button class="tab-btn active" data-category="featured">Featured</button>
+                    <button class="tab-btn" data-category="software-eng">Development</button>
+                    <button class="tab-btn" data-category="ai-ml">AI/ML</button>
+                    <button class="tab-btn" data-category="analytics">Analytics</button>
+                    <button class="tab-btn" data-category="hackathon">Hackathons</button>
+                </div>
+                
+                <!-- Desktop Grid Layout -->
+                <div class="project-grid">
+                    <!-- Project 1: Neunet -->
+                    <div class="project-item card" data-category="software-eng ai-ml featured">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/neunet.png" alt="Neunet - AI Recruiter App" class="card-img-top mb-3 zoom-mobile">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://www.neunet.io/login" target="_blank" rel="noopener noreferrer" class="animated-link">Neunet</a></h3>
+                                <span class="project-date">Jan 2025 - Present</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A recruiter friendly app that handles job postings, candidate applications, and AI-powered candidate matching.</p>
+                                <div class="project-tags">
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">Azure Cosmos DB</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">OpenAI</span>
+                                    <span class="tag">TypeScript</span>
                                 </div>
-                                <p class="lead mb-4">
-                                    Greetings! I'm a seasoned techie with expertise in software development, machine learning, data science and business analytics. As someone who thrives on connecting with people, I bring a unique blend of technical prowess and interpersonal skills to the table. With a proven track record, I'm driven by a passion for problem-solving.  🚀</p>
-                                
-                                    <!-- Social icons -->
-                                <div class="social-icons-col mb-3">
-                                    <a class="social-icon-col" title="Calendly" href="https://calendly.com/asthat/30min" target="_blank" rel="noopener noreferrer"><img src="assets/img/calendly_col.png" alt="Calendly" width="24" height="24" ></a>
-                                    <a class="social-icon-col" title="Gmail" href="mailto:asthasingh220697@gmail.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/gmail_col.png" alt="Gmail" width="24" height="24" ></a>
-                                    <a class="social-icon-col" title="LinkedIn" href="https://www.linkedin.com/in/astha-t" target="_blank" rel="noopener noreferrer"><img src="assets/img/LI_col.png" alt="LinkedIn" width="24" height="24" ></a>
-                                    <a class="social-icon-col" title="GitHub" href="https://github.com/ASTHA22" target="_blank" rel="noopener noreferrer"><img src="assets/img/GitHub.png" alt="GitHub" width="24" height="24" style=></a>                        
-                                    <a class="social-icon-col" title="LeetCode" href="https://leetcode.com/Astha_22/" target="_blank" rel="noopener noreferrer"><img src="assets/img/Leetcode.png" alt="LeetCode" width="24" height="24" ></a>
-                                    <!-- Add more social icons as needed -->
-                                </div>                  
-                                
                             </div>
                         </div>
-                        <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                            <div class="image-container mt-lg-0 mt-5 d-flex justify-content-center">
-                                <img src="assets/img/astha_grad.jpg" alt="Astha" style="top: 0; left: 869px; border-radius: 50%; width: 320px; height: 320px; object-fit: cover; box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);">
+                    </div>
+
+                    <!-- Project 2: Portfolio Website (2025) -->
+                    <div class="project-item card" data-category="software-eng featured">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/portfolio-2025.png" alt="Portfolio Website 2025" class="card-img-top mb-3 theme-aware-image zoom-mobile" data-light-src="assets/img/portfolio-2025.png" data-dark-src="assets/img/portfolio-2025-dark.png">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://astha22.github.io/" target="_blank" rel="noopener noreferrer" class="animated-link">Portfolio - 2025</a></h3>
+                                <span class="project-date">Dec 2024 - Apr 2025</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Modern portfolio redesign with improved UI/UX, project categorization, and responsive layout. Features interactive elements, smooth animations, and theme toggling.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Responsive Design</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Project 3: Step 0 - Virtual Doctor -->
+                    <div class="project-item card" data-category="ai-ml hackathon">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/step0.jpg" alt="Step 0 - Virtual Doctor" class="card-img-top mb-3 zoom-mobile" style="object-position: right center;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://lnkd.in/gTqWHVRY" target="_blank" rel="noopener noreferrer" class="animated-link">Step 0</a></h3>
+                                <span class="project-date">Dec 2024</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A fully functional Virtual Doctor prototype designed to revolutionize healthcare with AI-driven interactions, diagnosing symptoms and recommending next steps.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HeyGen</span>
+                                    <span class="tag">Video AI Agent</span>
+                                    <span class="tag">OpenAI</span>
+                                    <span class="tag">Healthcare AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Fetch Compare Build -->
+                    <div class="project-item card" data-category="ai-ml hackathon featured">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/hac_ss.jpg" class="card-img-top mb-3 zoom-mobile zoom-mobile-strong" alt="Fetch Compare Build" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/Hack-for-social-impact---Bay-area-affordable-housing-development" target="_blank" rel="noopener noreferrer" class="animated-link">Fetch Compare Build</a></h3>
+                                <span class="project-date">Nov 2024</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">𝗧𝗼𝗽 𝟯 in the Hack for Social Impact hackathon - Uses advanced AI & decentralized technologies to assist with comparing building codes across jurisdictions in the Bay Area.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Fetch.ai</span>
+                                    <span class="tag">AI Agent</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Streamlit</span>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+
+                    <!-- Project 5: Braintrust -->
+                    <div class="project-item card" data-category="ai-ml software-eng">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/llm-evaluation.jpg" alt="Braintrust - LLM Evaluation" class="card-img-top mb-3 zoom-mobile">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/braintrust-project" target="_blank" rel="noopener noreferrer" class="animated-link">Braintrust</a></h3>
+                                <span class="project-date">Apr 2025</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">This project demonstrates how to integrate with Braintrust for LLM evaluation and logging.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">LLM Eval</span>
+                                    <span class="tag">Braintrust</span>
+                                    <span class="tag">BTQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Shopport - Voice Shopping -->
+                    <div class="project-item card" data-category="ai-ml hackathon">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/shopport.jpg" alt="Shopport - Voice Shopping" class="card-img-top mb-3 zoom-mobile">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/Shopport---Voice-assisted-Shopping-Support" target="_blank" rel="noopener noreferrer" class="animated-link">Shopport</a></h3>
+                                <span class="project-date">Dec 2024</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A modern voice-controlled shopping application for apparel with a beautiful UI. Shop hands-free using natural voice commands while enjoying a responsive interface.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">TailwindCSS</span>
+                                    <span class="tag">NLP</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Portfolio Website (2023) -->
+                    <div class="project-item card" data-category="software-eng">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/Port_ss.png" alt="Portfolio Website (2023)" class="card-img-top mb-3 theme-aware-image zoom-mobile" style="width: 100%; height: 200px;" data-light-src="assets/img/Port_ss.png" data-dark-src="assets/img/Port_ss_dark.png">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://asthast.github.io/Portfolio-2023/" target="_blank" rel="noopener noreferrer" class="animated-link">Portfolio - 2023</a></h3>
+                                <span class="project-date">Feb 2024 - Mar 2024</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Crafted a dynamic personal portfolio website showcasing professional journey, projects, & technical skills. Features responsive design, dark mode & web analytics integration.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: CRM Analytics -->
+                    <div class="project-item card" data-category="analytics">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/CRM_project.png" alt="CRM Analytics" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/CRM-Analytics" target="_blank" rel="noopener noreferrer" class="animated-link">CRM Analytics</a></h3>
+                                <span class="project-date">Mar 2024</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Developed a CRM Analytics project using Python and E-commerce data. Conducted RFM analysis for customer segmentation and implemented the BG/NBD model for CLTV prediction.</p>
+                                <div class="project-tags">
+                                    <span class="tag">CRM</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">RFM</span>
+                                    <span class="tag">BG/NBD</span>
+                                    <span class="tag">Pandas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: Hate Speech Detection -->
+                    <div class="project-item card" data-category="ai-ml">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/PR1.png" alt="Hate Speech Detection using Machine Learning" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/Hatespeech-detection-using-different-ml-deep-learning-techniques" target="_blank" rel="noopener noreferrer" class="animated-link">Hate Speech Detection</a></h3>
+                                <span class="project-date">Jun 2023 - Aug 2023</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Developed and compared ML models that can automatically identify and flag hate speech content on social media, making social media a safer and more inclusive space.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">SVM</span>
+                                    <span class="tag">Random Forest</span>
+                                    <span class="tag">LSTM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: AutoGrader -->
+                    <div class="project-item card" data-category="software-eng">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/autograder.png" alt="AutoGrader" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/Auto_Grader" target="_blank" rel="noopener noreferrer" class="animated-link">AutoGrader</a></h3>
+                                <span class="project-date">Feb 2023 - May 2023</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Robust code evaluation system that efficiently assesses code submissions for an entire class of students by utilizing test cases to provide pass/fail outcomes.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Automation</span>
+                                    <span class="tag">Test cases</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 11: ML for Breast Cancer Diagnosis -->
+                    <div class="project-item card" data-category="ai-ml">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/mlbc.png" alt="ML for Breast Cancer Diagnosis" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/EXPLORING-MACHINE-LEARNING-TECHNIQUES-POTENTIALLY-PREFERABLE-FOR-BREAST-CANCER-DIAGNOSIS" target="_blank" rel="noopener noreferrer" class="animated-link">ML Techniques for Breast Cancer diagnosis</a></h3>
+                                <span class="project-date">Aug 2022 - Dec 2022</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Exploring ML techniques for breast cancer diagnosis, aiming to improve early detection and increase the chances of survival for individuals.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Survey Analysis</span>
+                                    <span class="tag">ML Algorithms</span>
+                                    <span class="tag">SVM</span>
+                                    <span class="tag">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 12: Symphony Band Management System -->
+                    <div class="project-item card" data-category="software-eng featured">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/sbms.jpg" alt="Symphony Band Management System" class="card-img-top mb-3 zoom-mobile">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/Symphony-Band-Management-System" target="_blank" rel="noopener noreferrer" class="animated-link">Symphony Band Management System</a></h3>
+                                <span class="project-date">2023</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A comprehensive management platform for symphony bands, handling scheduling, member management, and event coordination with an intuitive dashboard.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Java</span>
+                                    <span class="tag">Spring Boot</span>
+                                    <span class="tag">MySQL</span>
+                                    <span class="tag">Full Stack</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 13: SearchLite - Web Search Engine -->
+                    <div class="project-item card" data-category="software-eng">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/searchlite.jpg" alt="SearchLite - Web Search Engine" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/GiftsonVasanth/OOAD_Final" target="_blank" rel="noopener noreferrer" class="animated-link">SearchLite</a></h3>
+                                <span class="project-date">Jun 2022 - Aug 2022</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A web search engine built leveraging JavaScript, React, and Python, with a seamless and intuitive search experience.</p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Python</span>
+                                    <span class="tag">HTML/CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 14: Smart Document Tracking System -->
+                    <div class="project-item card" data-category="software-eng">
+                        <div class="card-body d-flex flex-column justify-content-left text-left">
+                            <img src="assets/img/P4.jpg" alt="Smart Document Tracking System" class="card-img-top mb-3 zoom-mobile" style="width: 100%; height: 200px;">
+                            <div>
+                                <h3 class="card-title mb-1"><a href="https://github.com/ASTHA22/SMART-DOCUMENT-TRACKING-SYSTEM" target="_blank" rel="noopener noreferrer" class="animated-link">Smart Document Tracking System</a></h3>
+                                <span class="project-date">Jul 2018 - May 2019</span>
+                                <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Ensures document authenticity, tracks document access, & provides real-time alerts for unauthorized access, prioritizing document security.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Mbed</span>
+                                    <span class="tag">FRDM</span>
+                                    <span class="tag">Node-RED</span>
+                                    <span class="tag">PHP/MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 15: IOT Device for Breast Cancer Detection -->
+                    <!-- This card was moved to the Research section as per user clarification -->
+
+                    <!-- Project 16: Research Projects will be added here -->
+                </div>
+                
+                <!-- Mobile Carousel Layout -->
+                <div class="projects-carousel-wrapper">
+                    <div class="projects-carousel">
+                        <!-- Slides will be dynamically populated here -->
+                    </div>
+                    <div class="projects-controls">
+                        <button class="projects-control project-prev-slide btn btn-prev" id="projects-prev" aria-label="Previous project">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="projects-indicators" id="projects-indicators">
+                            <!-- Dots will be dynamically populated here -->
+                        </div>
+                        <button class="projects-control project-next-slide btn btn-next" id="projects-next" aria-label="Next project">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-            </section>
-            
+            </div>
+        </section>
 
-            <!-- About-->
-            <section class="resume-section element" id="about">
-                <div class="resume-section-content">    
-                    <div class="about" style="display: flex;">
-                        <div class="image-column" style="flex: 1;">
-                            <img src="assets/img/astha_26jan.jpg" alt="Astha" class="profile-picture" style="border-radius: 1%;box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.3);width: 100%; height: 100%;">
-                        </div>
-                        <div class="text-column" style="flex: 2;">
-                            <h2 class="mb-2" style="line-height: 1!important;padding-top:1!important;margin-top:0!important;">About Me</h2>
-                            <p>Welcome! My journey into the world of technology was sparked by a deep-rooted fascination with mathematics and its real-world applications. This love for numbers blossomed into a passion for Computer Science, leading me to specialize in software development, data science, and analytics.</p>
-                            
-                            <div class="card mb-2" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body mb-0" style="padding:7px">
-                                    <h5 class="card-title text-primary mb-0 mt-0" style="margin-bottom: 0;font-size:17px">Professional Experience</h3>
-                                    <ul class="list-unstyled" style="margin-bottom: 0;font-size:15px">
-                                        <li><strong>💼Delivering Results</strong>: Delivered end-to-end solutions for Fortune 100 & 500 companies, leading to a 20M INR (~275K USD) monthly sales boost & 6-7% revenue growth</li>
-                                        <li><strong>🚀Expertise</strong>: Specialize in  data science, business analytics, software development, API automation, and end-to-end process architecture</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card mb-2" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body mb-0" style="padding:7px">
-                                    <h5 class="card-title text-primary mb-0 mt-0" style="margin-bottom: 0;font-size:17px">Community Engagement</h3>
-                                    <ul class="list-unstyled" style="margin-bottom: 0;font-size:15px">
-                                        <li><strong>🎤Public Speaking</strong>: Hosted numerous events and workshops, reaching over 2000 students</li>
-                                        <li><strong>👨‍💼Leadership Roles</strong>: Served as the Anchoring and Tech Officer at the Indian Student Association at the University of Texas at Dallas and as the Tech Head at ISF-IETE at KJ Somaiya College of Engineering, Mumbai University</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card mb-2" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body mb-0" style="padding:7px">
-                                    <h5 class="card-title text-primary mb-0 mt-0" style="margin-bottom: 0;font-size:17px">Personal Interests</h3>
-                                    <ul class="list-unstyled" style="margin-bottom: 0;font-size:15px">
-                                        <li><strong>🎨Artistic Expression</strong>: Find solace and inspiration in drawing and painting, with formal training from the state of Maharashtra, India</li>
-                                        <li><strong>🌟Combining Passions</strong>: Dedicated to making a meaningful impact in both the professional and creative realms through technical expertise, communication skills, and artistic sensibilities</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>          
+        <section id="blog" class="blog">
+            <div class="section-content">
+                <div class="blog-header-row" style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.6em;">
+                    <h2 style="margin: 0;">My Blogs</h2>
+                    <a href="blog.html" class="view-all-posts-btn view-all-link">
+                        <span class="view-all-text">View All Posts</span>
+                        <span class="view-all-arrow">→</span>
+                    </a>
                 </div>
-            </section>
-
-
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-            
-                    <!-- First experience card -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Tech Lead</h3>
-                            <h6 class="card-subtitle mb-2">
-                                <a class="subheading mb-3" href="https://www.thinkround.org/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/img/TR.png" alt="Think Round Inc Logo" width="22" height="22" style="border-radius: 50%;">
-                                    <span class="company-name" style="font-size:18px">Think Round Inc</span>
-                                </a>
-                                <span class="float-right">Jun 2023 - Present</span>
-                            </h6>
-                            <ul>
-                                <li>Revamped tech stack (Python, JavaScript, Node.js, React, HTML, CSS) & website migration from Squarespace to GitHub & Docker, boosting performance by 10% & user engagement by 15%</li>
-                                <li>Executed social media campaigns with 80% average engagement & 7K impressions driving website traffic</li>
-                                <li>Achieved a 400% increase in followership through data-driven strategies & a 50% guest turn-in ratio</li>
-				<li>Established tech team for development of website & analytics, streamlining the workflow</li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <!-- Second experience card -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Project Manager & AI Specialist</h3>
-                            <h6 class="card-subtitle mb-2">
-                                <a class="subheading mb-3" href="https://needpedia.org/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/img/Np.png" alt="Needpedia Org Logo" width="22" height="22" style="border-radius: 50%;">
-                                    <span class="company-name" style="font-size:18px">Needpedia Org</span>
-                                </a>
-                                <span class="float-right">May 2023 - Sep 2023</span>
-                            </h6>
-                            <ul>
-                                <li>Spearheaded team building & project management, increasing productivity by 30% with improved collaboration</li>
-                                <li>Led AI assistant development using ML and NLP, improving bot detection by 10% and boosting user engagement by 10% with personalized recommendations</li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <!-- Third experience card -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Developer Analyst</h3>
-                            <h6 class="card-subtitle mb-2">
-                                <a class="subheading mb-3" href="https://www.hotelkeyapp.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/img/HK.png" alt="HotelKey Logo" width="22" height="22" style="border-radius: 50%;">
-                                    <span class="company-name" style="font-size:18px">HotelKey</span>
-                                </a>
-                                <span class="float-right">Feb 2023 - May 2023</span>
-                            </h6>
-                            <ul>
-                                <li>Automated Postman API collections for clients, including Hilton & Red Roof, using JavaScript, transitioning from manual to automated testing of the Property Management System, which increased testing efficiency by 90%</li>
-                                <li>Designed front-end web app UI/UX in Figma, achieving a 20% increase in user satisfaction through usability testing</li>
-                                <li>Improved SQL database management, reducing data processing errors by 30% & boosting accuracy by 20%</li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <!-- Fourth experience card -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Assistant Manager - Data Science & Analytics</h3>
-                            <h6 class="card-subtitle mb-2">
-                                <a class="subheading mb-3" href="https://www.angelone.in/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/img/AB.png" alt="Angel One Logo" width="22" height="22" style="border-radius: 50%;">
-                                    <span class="company-name" style="font-size:18px">Angel One Ltd. (formerly Angel Broking Ltd.)</span>
-                                </a>
-                                <span class="float-right">Sep 2021 - Dec 2021</span>
-                            </h6>
-                            <ul>
-                                <li>Led team in projecting incentives for various contest campaigns for traders & brokers, leading to ~14% month on month client acquisition rate surge, earning Employee of Month</li>
-                                <li>Developed predictive financial algorithms using GCP's BigQuery and ML with R & Python, leading to a 15% boost in ROI</li>
-                                <li>Analyzed campaigns using Google Data Studio, contributing to a 20% enhancement in effectiveness of decision-making</li>
-                                <li>Revamped the NPS rating system, securing a 25% rise in customer satisfaction, and implemented targeted incentives for a 30% upswing in customer participation in survey journeys and contests</li>
-                            </ul>
-                        </div>
-                    </div>
-            
-                    <!-- Fifth experience card -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary">Senior Analyst</h3>
-                            <h6 class="card-subtitle mb-2">
-                                <a class="subheading mb-3" href="https://cartesianconsulting.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/img/CC.png" alt="Cartesian Consulting Logo" width="22" height="22" style="border-radius: 50%;">
-                                    <span class="company-name" style="font-size:18px">Cartesian Consulting</span>
-                                </a>
-                                <span class="float-right">Jun 2019 - Jul 2021</span>
-                            </h6>
-                            <ul>
-                                <li>Awarded 'More than Expected' for scaling Fortune 500 businesses (Retail: Vero Moda, Jack & Jones, ONLY, Selected, Titan; QSR: McDonald’s) using CRM analytics & targeted campaigns, generating 20M INR (~275K USD) in monthly incremental sales</li>
-                                <li>Achieved a perfect 10 NPS rating & drove a 6-7% increase in monthly revenue by utilizing A/B testing, cross-sell strategies, market basket analysis, & customer segmentation</li>
-                                <li>Recognized with the 'Extra Mile' award for enhancing digital presence & personalizing recommendations using Cosine Similarity algorithms for a Fortune 100 QSR brand</li>
-                                <li>Automated campaign execution processes, built ML models including Linear & Logistic Regression, XGBoost, & Naïve Bayes, using R, Python, SQL, & advanced Excel and optimized retail client account databases with SQL servers, reducing query response times, minimizing data discrepancies resulting in enhancement of operational efficiency by 25%</li>
-                            </ul>
-                        </div>
+                <!-- Blog Carousel for Mobile -->
+                <div class="blog-carousel-wrapper" style="display:none">
+                    <div class="blog-carousel"></div>
+                    <div class="blog-controls">
+                        <button class="blog-control blog-prev-slide btn btn-prev" id="blog-prev" aria-label="Previous blog">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="blog-indicators" id="blog-indicators"></div>
+                        <button class="blog-control blog-next-slide btn btn-next" id="blog-next" aria-label="Next blog">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
-            </section>
-            
-            
-            
-
-
-            <!-- Projects-->
-            <section class="resume-section element" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="row row-cols-1 row-cols-md-4 g-3">
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/hac_ss.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/Hack-for-social-impact---Bay-area-affordable-housing-development" target="_blank" rel="noopener noreferrer">Fetch Compare Build</a></h5>
-                                        <span class="text-primary">Nov 2024 - Nov 2024</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">𝗧𝗼𝗽 𝟯 𝗶𝗻 𝘁𝗵𝗲 𝗛𝗮𝗰𝗸 𝗳𝗼𝗿 𝗦𝗼𝗰𝗶𝗮𝗹 𝗜𝗺𝗽𝗮𝗰𝘁 𝗵𝗮𝗰𝗸𝗮𝘁𝗵𝗼𝗻 - 𝗧𝗲𝗿𝗻𝗲𝗿 𝗜𝗻𝘀𝘁𝗶𝘁𝘂𝘁𝗲 𝗳𝗼𝗿 𝗛𝗼𝘂𝘀𝗶𝗻𝗴 𝗔𝗳𝗳𝗼𝗿𝗱𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲🏆🏙️🏡
-                                            It uses advanced AI & decentralized technologies to assist with comparing building codes across jurisdictions in the Bay Area. The goal is to support affordable housing development by simplifying the process of analyzing and aligning building regulations.
-                                            <a href="https://drive.google.com/file/d/1peNFFEwG5lKGSwNTjnkX-ML8sMLPpIEc/view" target="_blank" rel="noopener noreferrer">Demo</a>
-                                        </p>
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">Fetch.ai</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">AI Agent</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">PostgreSQL</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Streamlit</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">HTML</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">CSS</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/Port_ss.png" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/astha22.github.io" target="_blank" rel="noopener noreferrer">Personal Portfolio Website</a></h5>
-                                        <span class="text-primary">Feb 2024 - Mar 2024</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Crafted a dynamic personal portfolio website showcasing professional journey, projects, & technical skills. Features responsive design, dark mode, clickable links, & web analytics integration. Utilized HTML, CSS, JavaScript, Bootstrap, & web analytics tool for enhanced user experience</p>
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">HTML</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">CSS</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">JavaScript</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Bootstrap</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Web Analytics</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- End Blog Carousel for Mobile -->
+                <div class="blog-grid-detailed exact-ref">
+                    <article class="blog-post-detailed exact-ref" onclick="window.open('https://www.linkedin.com/posts/astha-t_hackforsocialimpact-affordablehousing-techforgood-activity-7262641440713826305-njLv/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8','_blank')" style="cursor:pointer">
+                        <div class="blog-img-aspect">
+                            <img src="assets/gallery/img11.jpg" alt="Blog Post 1">
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/CRM_project.png" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/CRM-Analytics" target="_blank" rel="noopener noreferrer">CRM Analytics</a></h5>
-                                        <span class="text-primary">Mar 2024 - Mar 2024</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Developed a CRM Analytics project using Python and E-commerce data. Conducted RFM analysis for customer segmentation, Cohort Analysis for retention insights, and implemented the BG/NBD model for CLTV prediction. Presented findings with Pandas, plotly, and seaborn</p>
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">CRM</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">RFM</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">BG/NBD</div>
-                                        </div>                                        
-                                        <div class="tag">
-                                            <div class="text_tag">Pandas</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">plotly</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">seaborn</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">matplotlib </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                         
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/PR1.png" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/Hatespeech-detection-using-different-ml-deep-learning-techniques" target="_blank" rel="noopener noreferrer">Hate Speech Detection using Machine Learning</a></h5>
-                                        <span class="text-primary">Jun 2023 - Aug 2023</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Developed and compared ML models that can automatically identify and flag hate speech content on social media, we hope to make social media a safer and more inclusive space for everyone</p>
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">SVM</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Random Forest</div>
-                                        </div>                                  
-                                        <div class="tag">
-                                            <div class="text_tag">Logistic Regression</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Naive Bayes</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">LSTM</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Hackathons</span>
+                            <h3>Top 3 - Hack for Social Impact</h3>
+                            <span class="post-date">Nov 2024</span>
+                            <p>Top 3 at Hack for Social Impact by Terner Institute, with Fetch.ai, for Fetch Compare Build—a tech solution simplifying California housing codes to support affordable housing.</p>
+                            <span class="read-more">Read more</span>
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/PR2.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/Auto_Grader" target="_blank" rel="noopener noreferrer">AutoGrader</a></h5>
-                                        <span class="text-primary">Feb 2023 - May 2023</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Robust code evaluation system, efficiently assesses code submissions for an entire class of students by utilizing test cases to provide pass/fail outcomes, calculate pass %, & streamline the grading workflow for teaching assistants </p>                                       
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Automation</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Test cases</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </article>
+                    <article class="blog-post-detailed exact-ref" onclick="window.open('https://www.linkedin.com/posts/astha-t_sfpython-python-machinelearning-activity-7283649231607775232-as_m/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8','_blank')" style="cursor:pointer">
+                        <div class="blog-img-aspect">
+                            <img src="assets/gallery/img13.jpg" alt="Blog Post 1">
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/PR3.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/EXPLORING-MACHINE-LEARNING-TECHNIQUES-POTENTIALLY-PREFERABLE-FOR-BREAST-CANCER-DIAGNOSIS" target="_blank" rel="noopener noreferrer">Exploring ML Techniques potentially preferable for Breast Cancer diagnosis</a></h5>
-                                        <span class="text-primary">Aug 2022 - Dec 2022</span>                                        
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Exploring ML techniques for breast cancer diagnosis, aiming to improve early detection and increase the chances of survival for individuals facing this prevalent cancer worldwide</p>                                        
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">Survey Analysis</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">ML Algorithms</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">SVM</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Events</span>
+                            <h3>My Talk at SF Python!</h3>
+                            <span class="post-date">Jan 2025</span>
+                            <p>Spoke at SF Python on my journey from Machine Learning to Full-Stack Development, sharing insights on Python, AI, and LLMs with the vibrant tech community.</p>
+                            <span class="read-more">Read more</span>
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/pr5.png" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/SujitKilli/SymphonyBand" target="_blank" rel="noopener noreferrer">Symphony Band Management System</a></h5>
-                                        <span class="text-primary">Jun 2022 - Aug 2022</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Developed utilizing a tech stack comprising MySQL, JDBC, Spring Boot, HTML, CSS, and JavaScript which processes customer requests, concert allocation, and employee management, streamlining band operations</p>                                        
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">MySQL</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">DBMS</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">JDBC</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">HTML</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">CSS</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">JavaScript</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">SpringBoot</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Maven</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </article>
+                    <article class="blog-post-detailed exact-ref" onclick="window.open('https://www.linkedin.com/pulse/from-diagnosis-precision-future-ai-breast-cancer-detection-thakur-s3z7c/?trackingId=8qE8oUl1LiA%2F%2FOH1G0i6Dw%3D%3D','_blank')" style="cursor:pointer">
+                        <div class="blog-img-aspect">
+                            <img src="assets/blog/ml.png" alt="Blog Post 1">
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/pr4.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/GiftsonVasanth/OOAD_Final" target="_blank" rel="noopener noreferrer">SearchLite - Web Search Engine</a></h5>
-                                        <span class="text-primary">Jun 2022 - Aug 2022</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">A web search engine built leveraging JavaScript, React, and Python, with a seamless and intuitive search experience facilitated through the use of React for the front-end interface and JavaScript for dynamic functionality</p>                                       
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">React</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">JavaScript</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Python</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">HTML</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">CSS</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">HealthTech</span>
+                            <h3>Fighting Cancer with ML</h3>
+                            <span class="post-date">Dec 2024</span>
+                            <p>Concluded my ML in Breast Cancer series with key insights on SVMs, diagnostic challenges, and the future of AI-human collaboration in healthcare</p>
+                            <span class="read-more">Read more</span>
                         </div>
-                        <div class="col">
-                            <div class="card mt-3 mb-3" style="height: 600px; overflow: hidden; box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                <div class="card-body d-flex flex-column justify-content-left text-left">
-                                    <img src="assets/img/P4.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                    <div>
-                                        <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/SMART-DOCUMENT-TRACKING-SYSTEM" target="_blank" rel="noopener noreferrer">Smart Document Tracking System</a></h5>
-                                        <span class="text-primary">Jul 2018 - May 2019</span>
-                                        <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">This system ensures document authenticity, tracks document access, & provides real-time alerts for unauthorized access, prioritizing document security leveraging embedded systems and a range of web technologies</p>                                        
-                                    </div>
-                                    <div class="tags">
-                                        <div class="tag">
-                                            <div class="text_tag">Mbed</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">FRDM</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Accel</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">nRF</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">Node-RED</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">PHP</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">CSS</div>
-                                        </div>
-                                        <div class="tag">
-                                            <div class="text_tag">MySQL</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </article>
+                    <article class="blog-post-detailed exact-ref" onclick="window.open('https://www.linkedin.com/posts/astha-t_networking-ai-founders-activity-7293433813802618880-Ueef/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACJymUEBeKljoFGj_Bi_bk-UJr33os1g2X8','_blank')" style="cursor:pointer">
+                        <div class="blog-img-aspect">
+                            <img src="assets/blog/vcn.jpg" alt="Blog Post 1">
                         </div>
-                    </div>
+                        <div class="blog-card-content">
+                            <span class="blog-card-category">Events</span>
+                            <h3>Co-Host - SF AI Founders & VC Networking Event</h3>
+                            <span class="post-date">Feb 2025</span>
+                            <p>Co-hosted the SF AI Founders & VC Networking event—an inspiring night of conversations, connections, and collaboration in the AI space!</p>
+                            <span class="read-more">Read more</span>
+                        </div>
+                    </article>
                 </div>
-            </section>
-            
+            </div>
+        </section>
+    </main>
 
-            <!-- Patents & Publications-->
-            <section class="resume-section" id="research">
-                <div class="resume-section-content">
-                    <h2 class="mb-1">Research - Patents & Publications</h2>
-                        <div class="row row-cols-1 row-cols-md-4 g-3">
-                            <div class="col">
-                                <div class="card mt-3 mb-3 order-1" style="height: 530px; overflow: hidden;box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                    <div class="card-body d-flex flex-column justify-content-left text-left">
-                                        <img src="assets/img/P1.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                        <div>
-                                            <h5 class="card-title mb-1"><a href="https://www.registered-design.service.gov.uk/find/6289909" target="_blank" rel="noopener noreferrer">IOT Device for Breast Cancer Detection</a></h5>
-                                            <h6 class="card-subtitle mb-2">UK Design Patent - Design number - 6289909</h6>
-                                            <span class="text-primary">Jul 2023</span>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">An IoT device integrating sensors, enabling continuous data collection and remote monitoring, improving early detection and minimizing the need for frequent in-person appointments</p>                                       
-                                        </div>
-                                    </div>
-                                </div>       
-                            </div>
-                        
-                            <div class="col">
-                                <div class="card mt-3 mb-3 order-2" style="height: 530px; overflow: hidden;box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                    <div class="card-body d-flex flex-column justify-content-left text-left">
-                                        <img src="assets/img/P2.png" class="card-img-top mb-3" alt="" style="width: 100%;; height: 200px;">
-                                        <div>
-                                            <h5 class="card-title mb-1"><a href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/ApplicationStatus" target="_blank" rel="noopener noreferrer">3D vector coordinate calculator/ transformation/ convertor system</a></h5>
-                                            <h6 class="card-subtitle mb-2">Indian Patent - Application Number - 201921022065</h6>
-                                            <span class="text-primary">Jun 2019</span>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">3-dimensional vector coordinate calculator will give any type of coordinates (cartesian, cylindrical, spherical) instantaneously and see all parameters - width, height, and depth (length)</p>                                        
-                                        </div>
-                                    </div>
-                                </div>            
-                            </div>
-
-                            <div class="col">
-                                <div class="card mt-3 mb-3 order-3" style="height: 530px; overflow: hidden;box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                    <div class="card-body d-flex flex-column justify-content-left text-left">
-                                        <img src="assets/img/P3.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                        <div>
-                                            <h5 class="card-title mb-1"><a href="https://ieeexplore.ieee.org/document/10220585" target="_blank" rel="noopener noreferrer">An Intelligent Framework for Driver Fatigue Detection Based on Hybrid Model of Gradient Boost Decision Tree-CNN-LR</a></h5>
-                                            <h6 class="card-subtitle mb-2">IEEE ICIRCA</h6>
-                                            <span class="text-primary">Aug 28, 2023</span>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">Cost-effective, real-time drivers drowsiness detection system based on a hybrid model of Gradient Boost Decision Tree-CNN-LR</p>
-                                        </div>
-                                    </div>
-                                </div>           
-                            </div>
-            
-                            <div class="col">
-                                <div class="card mt-3 mb-3 order-4" style="height: 530px; overflow: hidden;box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                                    <div class="card-body d-flex flex-column justify-content-left text-left">
-                                        <img src="assets/img/P4.jpg" class="card-img-top mb-3" alt="" style="width: 100%; height: 200px;">
-                                        <div>
-                                            <h5 class="card-title mb-1"><a href="https://github.com/ASTHA22/SMART-DOCUMENT-TRACKING-SYSTEM" target="_blank" rel="noopener noreferrer">Smart Document Tracking System</a></h5>
-                                            <h6 class="card-subtitle mb-2">International conference - ICRTDARIP proceeding</h6>
-                                            <span class="text-primary">Nov 19, 2020</span>
-                                            <p class="card-text" style="overflow: hidden; text-overflow: ellipsis;">This system ensures document authenticity, tracks document access, & provides real-time alerts for unauthorized access, leveraging embedded systems and a range of web technologies</p>                                        
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section name-section">
+                <h2>Astha Singh<br>Thakur</h2>
+                <!-- <a href="mailto:asthasingh2066@gmail.com" class="email-link">asthasingh2066@gmail.com</a> -->
+                <a href="#" style="color: #7B68EE;">San Francisco, CA</a>
+                <div class="resume-link">
+                    Also, here's a cool sheet of paper - <a href="Resume/Resume_Astha.pdf" target="_blank">Resume</a>
                 </div>
-            </section>
-            
-            <!-- Skills-->
-            <section class="resume-section element" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-            
-                    <div class="row">
-                        <!-- Left Column -->
-                        <div class="col-md-6">
-                            <!-- Development -->
-                            <div class="card mb-5">
-                                <div class="card-body icon-container">
-                                    <h5 class="card-title mb-3" style="color: #5D6BA7;">Development</h5>
-                                    <!-- Front-End Development -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Front-End Development</h6>
-                                        <!-- Front-end development icons -->
-                                            <a title="HTML" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="assets/img/html.png" alt="" width="50" height="50"></a>
-                                            <a title="CSS" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="assets/img/css.png" alt="" width="50" height="50"></a>
-                                            <a title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="assets/img/javascript.png" alt="" width="50" height="50"></a>
-                                            <a title="jQuery" href="https://jquery.com/" target="_blank"><img src="assets/img/jquery.png" alt="" width="50" height="50"></a>
-                                            <a title="Bootstrap" href="https://getbootstrap.com/" target="_blank"><img src="assets/img/bootstrap.png" alt="" width="50" height="50"></a>
-                                            <a title="React" href="https://reactjs.org/" target="_blank"><img src="assets/img/react.png" alt="" width="50" height="50"></a>
-                                            <a title="SASS" href="https://sass-lang.com/" target="_blank"><img src="assets/img/sass.png" alt="" width="50" height="50"></a>
-                                            <a title="Figma" href="https://www.figma.com/" target="_blank"><img src="assets/img/figma.png" alt="" width="50" height="50"></a>
-                                                                        
-                                    </div>
-                                    <!-- Back-End Development -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Back-End Development</h6>
-                                        <!-- Back-end development icons -->
-                                            <a title="Java" href="https://www.java.com/" target="_blank"><img src="assets/img/java.png" alt="" width="50" height="50"></a>
-                                            <a title="C Programming" href="https://www.learn-c.org/" target="_blank"><img src="assets/img/c.png" alt="" width="50" height="50"></a>
-                                            <a title="C++" href="https://isocpp.org/" target="_blank"><img src="assets/img/cpp.png" alt="" width="50" height="50"></a>
-                                            <a title="Python" href="https://www.python.org/" target="_blank"><img src="assets/img/python.png" alt="" width="50" height="50"></a>
-                                            <a title="Node.js" href="https://nodejs.org/en" target="_blank"><img src="assets/img/nodejs.png" alt="" width="50" height="50"></a>
-                                            <a title="SpringBoot" href="https://spring.io/projects/spring-boot" target="_blank"><img src="assets/img/springboot.png" alt="" width="60" height="50"></a>
-                                            <a title="SpringBoot+Maven" href="https://ertan-toker.de/spring-boot-project-apache-maven-en/" target="_blank"><img src="assets/img/SpringBoot_Maven.png" alt="" width="50" height="50"></a>
-                                            <a title="Maven" href="https://maven.apache.org/" target="_blank"><img src="assets/img/maven.png" alt="" width="50" height="50"></a>
-                                            <a title="PHP" href="https://www.php.net/" target="_blank"><img src="assets/img/php.png" alt="" width="50" height="50"></a>
-                                            <a title="npm" href="https://www.npmjs.com/" target="_blank"><img src="assets/img/npm.png" alt="" width="50" height="50"></a> 
-                                    </div>
-                                    <!-- Database Technologies -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Database Technologies</h6>
-                                        <!-- Database technology icons -->
-                                            <a title="MySQL" href="https://www.mysql.com/" target="_blank"><img src="assets/img/mysql.png" alt="" width="60" height="50"></a>
-                                            <a title="SQLite" href="https://www.sqlite.org/" target="_blank"><img src="assets/img/sqlite.png" alt="" width="65" height="50"></a>
-                                            <a title="Microsoft SQL" href="https://www.microsoft.com/en-us/sql-server/" target="_blank"><img src="assets/img/mssql.png" alt="" width="60" height="50"></a>
-                                            <a title="MariaDB" href="https://mariadb.org/" target="_blank"><img src="assets/img/mariadb.png" alt="" width="50" height="50"></a>
-                                            <a title="Google BigQuery" href="https://cloud.google.com/bigquery?hl=en" target="_blank"><img src="assets/img/google_bigquery.png" alt="" width="50" height="50"></a>
-                                            <a title="MongoDB" href="https://www.mongodb.com/" target="_blank"><img src="assets/img/mongodb.png" alt="" width="50" height="50"></a>
-                                            <a title="SQL" href="https://www.geeksforgeeks.org/sql-tutorial/" target="_blank"><img src="assets/img/sql.png" alt="" width="50" height="50"></a>
-                                            <a title="Microsoft Access" href="https://www.microsoft.com/en-us/microsoft-365/access" target="_blank"><img src="assets/img/access.png" alt="" width="50" height="50"></a>
-                                                                        
-                                    </div>
-                                    <!-- Automation & Testing & Hardware -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Automation, Testing & Hardware</h6>
-                                        <!-- Automation, testing, and hardware icons -->
-                                            <a title="Postman" href="https://www.postman.com/" target="_blank"><img src="assets/img/postman.png" alt="" width="50" height="50"></a>
-                                            <a title="Charles" href="https://www.charlesproxy.com/" target="_blank"><img src="assets/img/charles.png" alt="" width="50" height="50"></a>
-                                            <a title="Node-RED" href="https://nodered.org/" target="_blank"><img src="assets/img/nodeRed.png" alt="" width="50" height="50"></a>
-                                            <a title="Arduino" href="https://www.arduino.cc/" target="_blank"><img src="assets/img/arduino.png" alt="" width="50" height="50"></a>
-                                            <a title="Raspberry Pi" href="https://www.raspberrypi.org/" target="_blank"><img src="assets/img/raspberry_pi.png" alt="" width="50" height="50"></a>
-                                                                        
-                                    </div>
-                                    <!-- IDE Platforms -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">IDE Platforms</h6>
-                                        <!-- IDE platform icons -->
-                                            <a title="IntelliJ" href="https://www.jetbrains.com/idea/" target="_blank"><img src="assets/img/intellij.png" alt="" width="50" height="50"></a>
-                                            <a title="IntelliJ Pycharm" href="https://www.jetbrains.com/pycharm/" target="_blank"><img src="assets/img/intellij_pycharm.png" alt="" width="50" height="50"></a>
-                                            <a title="Visual Studio" href="https://visualstudio.microsoft.com/" target="_blank"><img src="assets/img/vs.png" alt="" width="50" height="50"></a>
-                                            <a title="Visual Studio Code" href="https://visualstudio.microsoft.com/" target="_blank"><img src="assets/img/vsc.png" alt="" width="50" height="50"></a>
-                                                                        
-                                    </div>
-                                </div>
-                            </div>
-                                                   
-                            
-                            <!-- Core Concepts -->
-                            <div class="card icon-container mb-5">
-                                <div class="card-body icon-container">
-                                    <h5 class="card-title icon-container mb-3" style="color: #5D6BA7;">Core Concepts</h5>
-                                    <!-- Core Concepts icons -->
-                                        <a title="Data Structures & Algorithms" href="https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/" target="_blank"><img src="assets/img/dsa.png" alt="" width="50" height="50"></a>
-                                        <a title="Object Oriented Programming" href="https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/" target="_blank"><img src="assets/img/oop.png" alt="" width="50" height="50"></a>
-                                        <a title="MVC" href="https://developer.mozilla.org/en-US/docs/Glossary/MVC" target="_blank"><img src="assets/img/mvc1.png" alt="" width="50" height="50"></a>
-                                        <a title="Model View Controller" href="https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm" target="_blank"><img src="assets/img/mvc2.png" alt="" width="50" height="50"></a>
-                                        <a title="UML" href="https://www.uml.org/" target="_blank"><img src="assets/img/UML.png" alt="" width="50" height="50"></a>
-                                        <a title="CRUD" href="https://www.codecademy.com/article/what-is-crud" target="_blank"><img src="assets/img/crud.png" alt="" width="50" height="50"></a>
-                                        <a title="JDBC" href="https://www.geeksforgeeks.org/introduction-to-jdbc/" target="_blank"><img src="assets/img/jdbc.png" alt="" width="50" height="50"></a>
-                                        <a title="Design Patterns" href="https://sourcemaking.com/design_patterns" target="_blank"><img src="assets/img/design-patterns.png" alt="" width="50" height="50"></a>
-                                        <a title="RESTful API" href="https://aws.amazon.com/what-is/restful-api/" target="_blank"><img src="assets/img/Rest.png" alt="" width="50" height="50"></a>
-                                        <a title="DBMS" href="https://www.techtarget.com/searchdatamanagement/definition/database-management-system" target="_blank"><img src="assets/img/dbms.png" alt="" width="50" height="50"></a>
-                                        <a title="Data Analysis" href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank"><img src="assets/img/da.png" alt="" width="50" height="50"></a>
-                                        <a title="Data Analysis" href="https://www.simplilearn.com/data-analysis-methods-process-types-article" target="_blank"><img src="assets/img/da2.png" alt="" width="50" height="50"></a>
-                                        <a title="Machine Learning" href="https://www.ibm.com/topics/machine-learning" target="_blank"><img src="assets/img/Machine-Learning.png" alt="" width="50" height="50"></a>
-                                        <a title="Artifial Intelligence" href="https://www.ibm.com/topics/artificial-intelligence" target="_blank"><img src="assets/img/ai.png" alt="" width="50" height="50"></a>
-                                            
-                                </div>
-                            </div>
-            
-                        </div>
-            
-                        <!-- Right Column -->
-                        <div class="col-md-6">
-                            <!-- Data -->
-                            <div class="card mb-5">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3" style="color: #5D6BA7;">ML & Data</h5>
-                                    
-                                    <!-- Machine Learning & AI -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Machine Learning & AI</h6>
-                                            <a title="Python" href="https://www.python.org/" target="_blank"><img src="assets/img/python.png" alt="" width="50" height="50"></a>
-                                            <a title="R" href="https://www.r-project.org/" target="_blank"><img src="assets/img/r_project.png" alt="" width="65" height="50"></a>
-                                            <a title="TensorFlow" href="https://www.tensorflow.org/" target="_blank"><img src="assets/img/tensorflow.png" alt="" width="50" height="50"></a>
-                                            <a title="PyTorch" href="https://pytorch.org/" target="_blank"><img src="assets/img/pytorch.png" alt="" width="50" height="50"></a>
-                                            <a title="Scikit learn" href="https://scikit-learn.org/stable/" target="_blank"><img src="assets/img/scikit.png" alt="" width="50" height="50"></a>                
-                                    </div>
-                                    <!-- Data Science & Analytics -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Data Science & Analytics</h6>
-                                        <!-- Data science and analytics icons -->
-                                            <a title="SAS" href="https://www.sas.com/en_us/home.html" target="_blank"><img src="assets/img/sas.png" alt="" width="50" height="50"></a>
-                                            <a title="Anaconda" href="https://www.anaconda.com/" target="_blank"><img src="assets/img/anaconda.png" alt="" width="50" height="50"></a>
-                                            <a title="Jupyter" href="https://jupyter.org/" target="_blank"><img src="assets/img/jupyter.png" alt="" width="50" height="50"></a>
-                                            <a title="Spark" href="https://spark.apache.org/" target="_blank"><img src="assets/img/spark.png" alt="" width="50" height="50"></a>
-                                            <a title="Kaggle" href="https://www.kaggle.com/" target="_blank"><img src="assets/img/kaggle.png" alt="" width="50" height="50"></a>
-                                            <a title="MS Excel" href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank"><img src="assets/img/excel.png" alt="" width="50" height="50"></a>
-                                            <a title="MS Excel Macros" href="https://support.microsoft.com/en-us/office/quick-start-create-a-macro-741130ca-080d-49f5-9471-1e5fb3d581a8" target="_blank"><img src="assets/img/excel-macros-vba.png" alt="" width="50" height="50"></a>
-                                            <a title="VBA" href="https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office" target="_blank"><img src="assets/img/vba.png" alt="" width="50" height="50"></a>
-                                            <a title="Hadoop" href="https://hadoop.apache.org/" target="_blank"><img src="assets/img/hadoop.png" alt="" width="50" height="50"></a>
-                                            <a title="Kafka" href="https://kafka.apache.org/" target="_blank"><img src="assets/img/kafka.png" alt="" width="50" height="50"></a>
-                                            <a title="MATLAB" href="https://www.mathworks.com/products/matlab.html" target="_blank"><img src="assets/img/matlab.png" alt="" width="50" height="50"></a>
-                                                                
-                                    </div>
-                                    <!-- Data Visualization -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Data Visualization</h6>
-                                        <!-- Data visualization icons -->
-                                            <a title="Tableau" href="https://www.tableau.com/" target="_blank"><img src="assets/img/tableau.png" alt="" width="50" height="50"></a>
-                                            <a title="Google Data Studio" href="https://analytics.google.com/analytics/academy/course/10" target="_blank"><img src="assets/img/Data-Studio.png" alt="" width="50" height="50"></a>
-                                            <a title="Matplotlib" href="https://matplotlib.org/" target="_blank"><img src="assets/img/matplotlib.png" alt="" width="50" height="50"></a>
-                                            <a title="Seaborn" href="https://seaborn.pydata.org/" target="_blank"><img src="assets/img/seaborn.png" alt="" width="50" height="50"></a>
-                                            <a title="Google Charts" href="https://developers.google.com/chart" target="_blank"><img src="assets/img/chart.png" alt="" width="50" height="50"></a>
-                                          
-                                    </div>
-            
-                                </div>
-                            </div>
-            
-                            <!-- Business & Management -->
-                            <div class="card mb-5">
-                                <div class="card-body icon-container ">
-                                    <h5 class="card-title mb-3" style="color: #5D6BA7;">Business & Management</h5>
-				
-                                    <!-- Management Tools -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Management Tools</h6>
-                                            <a title="Apache" href="https://www.apache.org/" target="_blank"><img src="assets/img/apache.png" alt="" width="50" height="50"></a>
-                                            <a title="AWS" href="https://aws.amazon.com/" target="_blank"><img src="assets/img/aws.png" alt="" width="50" height="50"></a>
-                                            <a title="Google Cloud Platform" href="https://cloud.google.com/?hl=en" target="_blank"><img src="assets/img/gcp.png" alt="" width="50" height="50"></a>
-                                            <a title="Heroku" href="https://www.heroku.com/" target="_blank"><img src="assets/img/heroku.png" alt="" width="50" height="50"></a>
-                                            <a title="Git" href="https://git-scm.com/" target="_blank"><img src="assets/img/git.png" alt="" width="50" height="50"></a>
-                                            <a title="Jira" href="https://www.atlassian.com/software/jira" target="_blank"><img src="assets/img/jira.png" alt="" width="50" height="50"></a>
-                                            <a title="Atlassian" href="https://www.atlassian.com/" target="_blank"><img src="assets/img/atlassian.png" alt="" width="50" height="50"></a>
-                                            <a title="Confluence" href="https://www.atlassian.com/software/confluence" target="_blank"><img src="assets/img/confluence.png" alt="" width="50" height="50"></a>
-                                            <a title="ExLibris" href="https://exlibrisgroup.com/" target="_blank"><img src="assets/img/ExLibris.png" alt="" width="50" height="50"></a>
-                                            <a title="Google Cloud" href="https://cloud.google.com/?hl=en" target="_blank"><img src="assets/img/google_cloud.png" alt="" width="50" height="50"></a>
-                                            
-                                    </div>
-
-                                    <!-- Methodologies -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Methodologies</h6>
-                                            <a title="Agile Methodology" href="https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology,planning%2C%20executing%2C%20and%20evaluating." target="_blank"><img src="assets/img/agile.png" alt="" width="50" height="50"></a>
-                                            <a title="Agile Methodology" href="https://www.atlassian.com/agile#:~:text=What%20is%20the%20Agile%20methodology,planning%2C%20executing%2C%20and%20evaluating." target="_blank"><img src="assets/img/agile2.png" alt="" width="50" height="50"></a>
-                                            <a title="Scrum" href="https://www.scrum.org/" target="_blank"><img src="assets/img/scrum.png" alt="" width="50" height="50"></a>
-                                            <a title="SDLC" href="https://aws.amazon.com/what-is/sdlc/" target="_blank"><img src="assets/img/sdlc.png" alt="" width="50" height="50"></a>
-                                            <a title="Waterfall Methodology" href="https://business.adobe.com/blog/basics/waterfall" target="_blank"><img src="assets/img/waterfall.png" alt="" width="50" height="50"></a>
-                                              
-                                    </div>		
-
-                                    <!-- Business Strategy & Leadership -->
-                                    <div class="icon-container mb-3">
-                                        <h6 class="card-subtitle icon-container mb-2">Business Strategy & Leadership</h6>
-                                            <a title="Cross Functional Leadership" href="https://www.predictiveindex.com/blog/cross-functional-team-leadership" target="_blank"><img src="assets/img/leadership.png" alt="" width="50" height="50"></a>
-                                            <a title="Budgeting" href="https://www.datarails.com/predictive-budgeting-guide/" target="_blank"><img src="assets/img/budgeting.png" alt="" width="50" height="50"></a>
-                                            <a title="Cost Benefit Analysis" href="https://online.hbs.edu/blog/post/cost-benefit-analysis" target="_blank"><img src="assets/img/cba.png" alt="" width="50" height="50"></a>
-                                            <a title="Marketing Forecast" href="https://planful.com/blog/marketing-forecasting/" target="_blank"><img src="assets/img/mf.png" alt="" width="50" height="50"></a>
-                                            <a title="Market Research" href="https://www.investopedia.com/terms/m/market-research.asp" target="_blank"><img src="assets/img/mr.png" alt="" width="50" height="50"></a>
-                                            <a title="Customer Relationship Management" href="https://www.salesforce.com/crm/what-is-crm/" target="_blank"><img src="assets/img/crm.png" alt="" width="50" height="50"></a>
-                                            <a title="Digital Marketing" href="https://mailchimp.com/marketing-glossary/digital-marketing/#:~:text=Digital%20marketing%2C%20also%20called%20online,messages%20as%20a%20marketing%20channel." target="_blank"><img src="assets/img/digital-Marketing.png" alt="" width="50" height="50"></a>
-                                            <a title="Forecasting" href="https://www.investopedia.com/terms/f/forecasting.asp" target="_blank"><img src="assets/img/forecasting.png" alt="" width="50" height="50"></a>
-                                            <a title="Resource Allocation" href="https://clickup.com/blog/resource-allocation/" target="_blank"><img src="assets/img/ra.png" alt="" width="50" height="50"></a>
-                                            <a title="Root Cause Analysis" href="https://asq.org/quality-resources/root-cause-analysis" target="_blank"><img src="assets/img/rca.png" alt="" width="50" height="50"></a>
-                                            <a title="A/B Testing" href="https://www.oracle.com/cx/marketing/what-is-ab-testing/" target="_blank"><img src="assets/img/abtest.png" alt="" width="50" height="50"></a>
-                                            <a title="Financial analysis" href="https://www.investopedia.com/terms/f/financial-analysis.asp" target="_blank"><img src="assets/img/fa.png" alt="" width="50" height="50"></a>
-                                            <a title="Microsoft Powerpoint" href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank"><img src="assets/img/ppt.png" alt="" width="50" height="50"></a>
-                                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                </div>
-            </section>
-
-
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    
-                    <!-- First education entry -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <img src="assets/img/UTD.png" alt="UTD Logo" width="80" height="80" class="me-2" style="border-radius: 50%;">
-                                    <div>
-                                        <h3 class="card-title mb-0"><a href="https://www.utdallas.edu/" target="_blank" rel="noopener noreferrer">University of Texas at Dallas</a></h3>
-                                        <h5 class="card-subtitle mb-2"><a href="https://engineering.utdallas.edu/" target="_blank" rel="noopener noreferrer">Erik Jonsson School of Engineering and Computer Science</a></h6>
-                                        <div class="subheading mb-0">Master of Science - Computer Science</div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0"><span class="float-right">Jan 2022 - Dec 2023</span></div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <!-- Second education entry -->
-                    <div class="card mb-5" style="box-shadow: 4px 4px 30px rgba(75, 85, 99, 0.1);">
-                        <div class="card-body">
-                            <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <img src="assets/img/MU.png" alt="MU Logo" width="80" height="80" class="me-2" style="border-radius: 50%;">
-                                    <div>
-                                        <h3 class="card-title mb-0"><a href="https://mu.ac.in/" target="_blank" rel="noopener noreferrer">University of Mumbai</a></h3>
-                                        <h5 class="card-subtitle mb-2"><a href="https://kjsce-old.somaiya.edu.in/kjsce-old" target="_blank" rel="noopener noreferrer">K. J. Somaiya College of Engineering</a></h6>
-                                        <div class="subheading mb-0">Bachelor of Technology - Electronics & Telecommunication</div>
-                                    </div>
-                                </div>
-                                <div class="flex-shrink-0"><span class="float-right">Jul 2015 - May 2019</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-
-            <!--Accolades-->
-            <section class="resume-section element" id="accolades">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Accolades</h2>
-                    <div class="row row-cols-1 row-cols-md-2 g-3">
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body" style="height: 150px;">
-                                    <h5 class="card-title mb-3"><a href="https://www.linkedin.com/in/astha-t/details/honors/" target="_blank" rel="noopener noreferrer">Employee of the Month - Nov 2021 - Angel One Ltd. (formerly Angel Broking Ltd.)</a></h5>
-                                    <p>Recognized for outstanding performance</p>
-                                </div>
-                            </div>
-                        </div>                        
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body" style="height: 150px;">
-                                    <h5 class="card-title mb-3"><a href="https://www.linkedin.com/in/astha-t/details/honors/" target="_blank" rel="noopener noreferrer">'More than expected' Award - Jun 2021 - Cartesian Consulting</a></h5>
-                                    <p>Awarded for creating the Bestseller Life Document, providing a comprehensive view of the business</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body" style="height: 150px;">
-                                    <h5 class="card-title mb-3"><a href="https://www.linkedin.com/in/astha-t/details/honors/" target="_blank" rel="noopener noreferrer">'Extra Mile' Award - Jan 2021 - Cartesian Consulting</a></h5>
-                                    <p>Acknowledged for exceptional performance and significant contributions to the organization</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body" style="height: 150px;">
-                                    <h5 class="card-title mb-3 text-primary">Qualified for IIT JEE Advanced 2015</h5>
-                                    <p>Ranked in the top 94th percentile among 1.29M candidates, one of 152K qualified in JEE Mains</p>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="col">
-                            <div class="card mb-3">
-                                <div class="card-body" style="height: 75px;">
-                                    <h5 class="card-title mb-3 text-primary">Inspire Award Recipient - Govt. of India - 2013</h5>
-                                </div>
-                            </div>                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-            <!--Blog-->
-            <section class="resume-section" id="blog">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Blog</h2>            
-                    <div class="blog-carousel">
-                        <div class="carousel-container">
-                          <!-- Card 8 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">November 13, 2024</p>
-                                    <h4 class="mb-3">𝗛𝗮𝗱 𝗮𝗻 𝗮𝗺𝗮𝘇𝗶𝗻𝗴 𝘁𝗶𝗺𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗦𝗙 𝗣𝘆𝘁𝗵𝗼𝗻 𝗺𝗲𝗲𝘁𝘂𝗽 𝗮𝘁 GitHub! 🎉</h4>
-                                    <p>It was fantastic to connect with fellow Python enthusiasts and learn from experts in the community. A special thanks to Pamela Fox for the insightful open-source walkthrough and the opportunity to dive deeper into Pallets Projects.</p>
-                                    <p>The collaborative project breakouts were a great way to get hands-on experience and strengthen my skills in open-source development.</p>
-                                    <p>Looking forward to the next meetup in January, and I can’t wait to continue building on the knowledge and connections from this event! 🚀</p>
-                                    <p>#Python #OpenSource #SFpython #PalletsProjects #GitHub #TechCommunity #Networking #Learning</p>
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/py1.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/py3.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                          <!-- Card 7 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">November 12, 2024</p>
-                                    <h4 class="mb-3">🚀𝗜𝗻𝗰𝗿𝗲𝗱𝗶𝗯𝗹𝗲 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗕𝗮𝘆 𝗔𝗿𝗲𝗮 𝗖𝗼𝗱𝗲𝗿𝘀 𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝘃𝗲 𝗔𝗜 & 𝗖𝗹𝗼𝘂𝗱 𝗧𝗮𝗹𝗸𝘀 𝘄𝗶𝘁𝗵 𝗚𝗼𝗼𝗴𝗹𝗲𝗿𝘀! 🌟</h4>
-                                    <p>I had an amazing time attending the Bay Area Coders Collective event in San Francisco, where I got to learn from top experts at Google Cloud and connect with fellow developers in the Bay Area tech community.
-                                    Here are some highlights from the event:</p>
-                                    <p>🔹 BigQuery & Generative AI with Alicia Williams: Alicia Williams gave an insightful demo on how BigQuery is revolutionizing data analytics with its new capabilities, including generative AI for sentiment analysis, entity recognition, and visual feature extraction. I had a great conversation with Alicia about BigQuery’s new features and the exciting possibilities it opens up. We also discussed the DocAI API—exciting stuff for automating document processing with AI!</p>
-                                    <p>🔹 Google Cloud Run + GPUs with Steren Giannini & Wenlei (Frank) He: Steren Giannini and Wenlei (Frank) He gave an engaging demo on how Google Cloud Run now supports GPUs, enabling powerful real-time AI inference applications in a serverless environment. I had a fascinating chat with Steren Giannini about Ollama and how it enhances the development of AI-powered solutions.</p>
-                                    <p> It was fantastic not only to learn from the speakers but also to meet so many great people at the event. Huge thanks to Alicia Williams, Steren Giannini, and Wenlei (Frank) He for their valuable insights, and to everyone I had the chance to connect with, including Vaibhav Jayan, Ahmad Zainuddin, CSM, Parth Sareen, Michael Chiang, Daisy Mayorga-Fuentes, Patrick Waivers, Konstantin Ramenskii, Courtney Oribello, Wei Wang, Maria Mobilia, Bill Prin.</p>
-                                    <p>I’m excited to apply all the knowledge I gained, from AI-powered analytics to new serverless cloud capabilities, to my own projects and continue pushing the boundaries of Cloud, AI, and Data Science.</p>
-                                    <p>Looking forward to more events like this and continuing to grow with the tech community!</p>
-                                    <p>#Google #BayAreaCoders #GoogleCloud #AI #MachineLearning #DataAnalytics #BigQuery #GenerativeAI #CloudRun #DocAI #TechCommunity #Networking #Ollama #SanFrancisco #TechForGood</p>
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/g2.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/g3.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                          <!-- Card 6 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">November 9-10, 2024</p>
-                                    <h4 class="mb-3">🚀  𝗧𝗵𝗿𝗶𝗹𝗹𝗲𝗱 𝘁𝗼 𝗯𝗲 𝗧𝗼𝗽 𝟯 𝗶𝗻 𝘁𝗵𝗲 𝗧𝗲𝗿𝗻𝗲𝗿 𝗜𝗻𝘀𝘁𝗶𝘁𝘂𝘁𝗲 𝗳𝗼𝗿 𝗛𝗼𝘂𝘀𝗶𝗻𝗴 𝗜𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻'𝘀 𝗛𝗼𝘂𝘀𝗶𝗻𝗴 𝗔𝗳𝗳𝗼𝗿𝗱𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲 𝗮𝘁 𝘁𝗵𝗲 𝗛𝗮𝗰𝗸 𝗳𝗼𝗿 𝗦𝗼𝗰𝗶𝗮𝗹 𝗜𝗺𝗽𝗮𝗰𝘁 𝗵𝗮𝗰𝗸𝗮𝘁𝗵𝗼𝗻!  🏆</h4>
-                                    <p>Our project, 𝗙𝗲𝘁𝗰𝗵 𝗖𝗼𝗺𝗽𝗮𝗿𝗲 𝗕𝘂𝗶𝗹𝗱, focuses on addressing the complexities of building codes in California and their impact on affordable housing development. It was an incredible experience working on such an impactful problem with my amazing team: Sophia Gigliotti, Komal Rajani, and Soshi Irie. Huge thanks to all of you for your dedication and teamwork!</p>
-                                    <p>🔹 Fetch.ai – Special thanks to Sana Wajid CEng MICE FPWI for your guidance and support throughout the hackathon, and to the Fetch.ai Innovation Lab for hosting and supporting this event</p>
-                                    <p>🔹 Microsoft for Startups – For providing the tools and resources to help us innovate</p>
-                                    <p>🔹 flockx – Thanks to Mark Losey for the insightful workshop on using Fetch.ai's technology in our solutions</p>
-                                    <p>This experience has inspired me to continue pursuing solutions that can help solve the affordable housing crisis and push the boundaries of tech for social good.</p>
-                                    <p>👉 You can check out our project on : <a href="https://lnkd.in/gfcTbMVp" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                                    <p>🎥 Watch our project presentation here: <a href="https://lnkd.in/gPFbrWpm" target="_blank" rel="noopener noreferrer">Presentation video</a></p>
-                                    <p>#HackForSocialImpact #AffordableHousing #TechForGood #Hackathon #SocialImpact #HousingAffordability #BuildingCodes #TernerInstitute #FetchAI #FlockX #MicrosoftForStartups #Innovation #TechForChange</p>
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/hac_ss.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                                <img src="assets/img/team_pic.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/hac.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                        
-                          <!-- Card 5 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">November 7, 2024</p>
-                                    <h4 class="mb-3">🌐 𝗔𝗜 𝗗𝗲𝗯𝗮𝘁𝗲: 𝗔𝗰𝗰𝗲𝗹𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝘃𝘀. 𝗦𝗮𝗳𝗲𝘁𝘆 - 𝗔 𝗧𝗵𝗼𝘂𝗴𝗵𝘁-𝗣𝗿𝗼𝘃𝗼𝗸𝗶𝗻𝗴 𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 𝗼𝗻 𝘁𝗵𝗲 𝗙𝘂𝘁𝘂𝗿𝗲 𝗼𝗳 𝗔𝗜 🤖⚖️</h4>
-                                    <p>I had an amazing night at the 𝗔𝗜 𝗗𝗲𝗯𝗮𝘁𝗲: 𝗔𝗰𝗰𝗲𝗹𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝘃𝘀. 𝗦𝗮𝗳𝗲𝘁𝘆 hosted by the SuperHuman Society in San Francisco. The debate brought together two powerful perspectives on one of the most pressing topics in AI development today:</p>
-                                    <p>𝗦𝗵𝗼𝘂𝗹𝗱 𝘄𝗲 𝗮𝗰𝗰𝗲𝗹𝗲𝗿𝗮𝘁𝗲 𝗔𝗜 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝘁𝗼 𝗾𝘂𝗶𝗰𝗸𝗹𝘆 𝗵𝗮𝗿𝗻𝗲𝘀𝘀 𝗶𝘁𝘀 𝗽𝗼𝘁𝗲𝗻𝘁𝗶𝗮𝗹, 𝗼𝗿 𝘁𝗮𝗸𝗲 𝗮 𝗺𝗼𝗿𝗲 𝗰𝗮𝘂𝘁𝗶𝗼𝘂𝘀, 𝘀𝗮𝗳𝗲𝘁𝘆-𝗳𝗶𝗿𝘀𝘁 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵 𝘁𝗼 𝗮𝘃𝗼𝗶𝗱 𝘂𝗻𝗶𝗻𝘁𝗲𝗻𝗱𝗲𝗱 𝗰𝗼𝗻𝘀𝗲𝗾𝘂𝗲𝗻𝗰𝗲𝘀?</p>
-                                    <p>It was a stimulating evening of discussion, where we explored the crucial balance between accelerating AI progress and ensuring it is developed with the necessary safety measures. I shared my thoughts on the importance of striking that balance—accelerating innovation while making sure we are thoughtfully mitigating the risks and potential negative impacts of AI.</p>
-                                    <p>🧠 𝗞𝗲𝘆 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀:</p>
-                                    <p>- The critical balance between 𝗦𝗽𝗲𝗲𝗱 𝘃𝘀. 𝗦𝗮𝗳𝗲𝘁𝘆 in AI development.</p>
-                                    <p>- The ethical implications of advancing AI too quickly without sufficient oversight.</p>
-                                    <p>- The collective responsibility we all share in ensuring a sustainable and responsible future for AI.</p>
-                                    <p>Huge thanks to Virgile Blais and the SuperHuman Society team for organizing such a well-structured and thought-provoking event. I’m excited for future debates and continuing these important conversations with passionate professionals in the field.</p>
-                                    <p>It was also great connecting with Romy Ilano, Jayson McCauliff, Haobei Aaron Song, Nick Rozman, Anna Jacobi, Spencer Kaplan who shared some fascinating insights during the evening. Let’s keep the conversation going and continue pushing the boundaries of what’s possible in AI while keeping safety at the forefront. 🔍</p>
-                                    <p>PS: The venue’s terrace/lounge offered an amazing view of the city, making the evening even more memorable. 🌆</p>
-                                    <p>𝗪𝗵𝗮𝘁’𝘀 𝘆𝗼𝘂𝗿 𝘁𝗮𝗸𝗲 𝗼𝗻 𝘁𝗵𝗶𝘀? 𝗦𝗵𝗼𝘂𝗹𝗱 𝘄𝗲 𝗽𝗿𝗶𝗼𝗿𝗶𝘁𝗶𝘇𝗲 𝗮𝗰𝗰𝗲𝗹𝗲𝗿𝗮𝘁𝗶𝗻𝗴 𝗔𝗜 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, 𝗼𝗿 𝘀𝗵𝗼𝘂𝗹𝗱 𝘄𝗲 𝗯𝗲 𝗺𝗼𝗿𝗲 𝗰𝗮𝘂𝘁𝗶𝗼𝘂𝘀 𝘁𝗼 𝗲𝗻𝘀𝘂𝗿𝗲 𝘀𝗮𝗳𝗲𝘁𝘆? 𝗜’𝗱 𝗹𝗼𝘃𝗲 𝘁𝗼 𝗵𝗲𝗮𝗿 𝘆𝗼𝘂𝗿 𝘁𝗵𝗼𝘂𝗴𝗵𝘁𝘀 𝗮𝗻𝗱 𝗱𝗶𝘀𝗰𝘂𝘀𝘀 𝗳𝘂𝗿𝘁𝗵𝗲𝗿!</p>
-                                    <p>#AI #ArtificialIntelligence #TechDebate #SafetyVsAcceleration #SuperHumanSociety #Innovation #AIethics #FutureOfAI</p>
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div>
-                                                <img src="assets/img/debate_day.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                          <!-- Card 4 -->
-                          <div class="blog-card">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p class="card-subtitle mb-2 text-muted">November 3, 2024</p>
-                                        <h4 class="mb-3">𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭: 𝐓𝐡𝐞 𝐑𝐢𝐬𝐤𝐬 𝐨𝐟 𝐒𝐡𝐚𝐫𝐢𝐧𝐠 𝐏𝐞𝐫𝐬𝐨𝐧𝐚𝐥 𝐃𝐚𝐭𝐚 𝐎𝐧𝐥𝐢𝐧𝐞</h4>
-                                        <p>As we continue to use platforms like LinkedIn to build our professional networks, it’s important to recognize both the benefits and the risks that come with sharing personal information online. While putting your data out there can help you receive personalized recommendations, it also opens the door to potential harassment and bullying.</p>
-                                        <p>Recently, I’ve encountered harassment from an individual named Mike Wong, who has been sending messages to my personal phone and LinkedIn account, making false claims about me, including accusations of online bullying.</p>
-                                        <p>This individual has only 2 connections on LinkedIn, and their activity is limited to commenting on my posts. I’ve blocked and reported this person, but I wanted to share this experience along with screenshots of the messages and comments to raise awareness.</p>
-                                        <p>This serves as a reminder for all of us to stay vigilant about the potential risks of online interactions. Please be cautious when engaging with suspicious accounts and report any harmful behavior.</p>
-                                        <p>LinkedIn, I’m requesting your support to ensure your reporting tools effectively prevent harassment, so we can all feel safe while networking and building professional communities.</p>
-                                        <p>Let’s continue to use LinkedIn to foster positive, professional connections, while also being mindful of the risks that come with sharing personal information.</p>
-                                        <p>#LinkedInSafety #OnlineHarassment #DataPrivacy #StayVigilant #ProfessionalNetworking #PersonalSafety</p>
-                                        <div class="media-section mt-4">
-                                            <div class="row">
-                                                <div class="col-6 mb-3">
-                                                    <img src="assets/img/MW_activity.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                                </div>
-                                                <div class="col-6 mb-3">
-                                                    <img src="assets/img/redacted-image_c2.png" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                     </div>
-                                </div>
-                            </div>
-                          <!-- Card 3 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">October 30, 2024</p>
-                                    <h4 class="mb-3">𝗘𝗺𝗽𝗼𝘄𝗲𝗿𝗲𝗱, 𝗶𝗻𝘀𝗽𝗶𝗿𝗲𝗱, 𝗮𝗻𝗱 𝗲𝗻𝗲𝗿𝗴𝗶𝘇𝗲𝗱! 💫 </h4>
-                                    <h4 class="mb-3">𝗛𝗮𝗱 𝗮𝗻 𝗮𝗺𝗮𝘇𝗶𝗻𝗴 𝘁𝗶𝗺𝗲 𝗮𝘁 𝘁𝗵𝗲 Women in Data Science (WiDS) Worldwide 𝗲𝘃𝗲𝗻𝘁 𝗵𝗼𝘀𝘁𝗲𝗱 𝗯𝘆 IBM! 🚀</h4>
-                                    <p>The day was full of powerful insights, demos, and inspiring conversations, leaving me more motivated than ever to push the boundaries of data science and AI. It was a reminder of how much impact women are making in tech and the importance of amplifying each other’s voices. 🌟</p>
-                                    <p>A huge thank you to Grishma Jenafor being an incredible host, bringing great energy and keeping the event so engaging throughout the day. 🙌
-                                        The event kicked off with an insightful demo by Yana Ageeva and Laurent Tillette de Clermont-Tonnerre showcasing an AI-driven application to improve customer retention. It was fascinating to explore how businesses can use this technology to understand customer behavior and deliver personalized experiences. 💡</p>
-                                    <p>We then heard from amazing speakers on a variety of topics:</p>
-                                    <p>●Laura Guio inspired us with her Executive Keynote, reminding me that I’ve found my peers — a room full of brilliant women making waves in data science! 💪</p>
-                                    <p>●Sandi Besen discussed Building Intelligent Multi-Agent Systems.</p>
-                                    <p>●Claudia Natasia shared her journey on “Code, Chaos, and Founding Dreams” Riley AI </p>
-                                    <p>●Katie Kaplan, PhD presented on Leveraging Remote Sensing, Machine Learning, and Causal Inference for climate solutions.</p>
-                                    <p>●Nathalie Baracaldo explored AI Safety and Unlearning for AI Safety.</p>
-                                    <p>●Cathy D. shared insights on Building AI Safeguards for election integrity.</p>
-                                    <p>●Vishakha Gupta talked about Simplifying Analytics on Multimodal Data.</p>
-                                    <p>The day wrapped up with a fantastic panel discussion featuring Miriam Leon, Shruti Bhutaiya, Yana Ageeva, and Yogitha Chilukuri on how data science is transforming industries and the future of AI. 💬</p>
-                                    <p>And of course, no event is complete without some fun! There was an inside joke about “RAG” that had everyone laughing — moments like these truly made the day memorable. 😄</p>
-                                    <p>Beyond the talks, I had the chance to meet and connect with incredible people, including Sandira Calviac, Manana Hakobyan, Hypatia Hou and many others — exchanging ideas about careers, innovation, and the future of data science. 🙌</p>
-                                    <p>A big thank you to IBM for hosting this incredible event and creating a dynamic space for learning and networking. I’m excited to stay connected with everyone I met!</p>
-                                    <p>#WiDS2024 #WomenInTech #DataScience #Networking #AI #DiversityInTech #Inspiration</p>
-                                    
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div>
-                                                <img src="assets/img/WIDS_Panel.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>
-                          <!-- Card 2 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">October 29, 2024</p>
-                                    <h4 class="mb-3">Had a fantastic time at the Figma x GitHub Dev Meetup last week in San Francisco!</h4>
-                                    <p>It was an amazing opportunity to connect with fellow developers and learn about the latest innovations in design and development. 🎉
-                                        Key highlights:</p>
-                                    <p>Lightning Talks from Jake Albaugh (Developer Advocate, Figma) and Cole Bemis (Staff Research Engineer, GitHub)—insightful discussions on the intersection of design and development.</p>
-                                    <p>Design-to-Code Demo: Figma and GitHub Copilot’s new integration in the Copilot Workspace—a game-changer for turning designs into code faster and more seamlessly than ever! 🚀</p>
-                                    <p>Networking with other devs and designers, exchanging ideas on how to streamline workflows and collaborate more effectively.</p>
-                                    <p>It was great chatting with Robert Young-Bobbett, Roxane Noël, Biplow Ghimire, Arun M., Danielle Robinson, Shelley Wang about everything from AI-driven development tools and design systems to React and front-end development. I really enjoyed hearing about their unique experiences with different technologies and how they are integrating them into their projects.
-                                        It was also a pleasure to meet Ana Boyer, one of the event organizers, who did an amazing job bringing everyone together and making the event so memorable!</p>
-                                    <p>I’m excited to dive deeper into these new tools and see how they can help improve my own projects. Huge thanks to Figma and GitHub for organizing such an insightful event!
-                                        Would love to hear from others who attended—what was your biggest takeaway? 🤔</p>
-                                    <p>#Figma #GitHub #Copilot #DesignToCode #DeveloperMeetup #TechCommunity #Innovation #DesignAndDev #React</p>
-                                    
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/figma_event.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/Jake_discussion_figma.jpeg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>                            
-                          <!-- Card 1 -->
-                          <div class="blog-card">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-subtitle mb-2 text-muted">October 12, 2024</p>
-                                    <h4 class="mb-3">🌟 Exciting Day at Think Round Inc.! 🌟</h4>
-                                    <p>I had the privilege of hosting my segment of the presentation at our recent event, where I shared the progress on our website development. I also had the opportunity to assist with social media campaigning for our installation launch. A huge thank you to everyone involved—especially Heidi Hardin, Eric Korman, Richa Sharma, Aswani Kotheri—your support and collaboration made it a success!</p>
-                                    <p>It’s always inspiring to see the passion and commitment our team brings to our mission. Together, we can make a difference!</p>
-                                    <p>Check out some highlights from the event below and follow us at Think Round, Inc. for more updates! 📸</p>
-                                    <p>#ThinkRoundInc #Teamwork #Gratitude #MakingADifference #WebsiteProgress #SocialMediaCampaign</p>
-                                    <div class="media-section mt-4">
-                                        <div class="row">
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/tri_p1.jpeg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                            <div class="col-6 mb-3">
-                                                <img src="assets/img/tri_p2.jpeg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-                            </div>
-                        </div>                                    
-                                    
-
-                            
-                    </div>
-    
-                    <button class="carousel-button prev">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                      </svg>
-                    </button>
-                    <button class="carousel-button next">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                      </svg>
-                    </button>
-                    
-                    <div class="dots-container"></div>
-                  </div>
-                </div>
-            </section>
-            
-            
-
-
-            <!-- Contact-->
-              <section class="resume-section element" id="contact">
-                <div class="resume-section-content">    
-                    <div class="contact">
-                        <div class="image-column mr-4" style="margin-top: 10px!important;">
-                            <img src="assets/img/astha_f1.jpg" alt="Astha" class="profile-picture" style="border-radius: 1%; box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.3);">
-                        </div>
-                        <div class="text-column ml-4">
-                            <h2 class="mb-2">Contact</h2>
-                            <p>Feel free to reach out – let's connect and create something amazing together</p>
-                            
-                            <div class="contact-container">
-                                <div class="mb-2" style="display: block;">
-                                    <a class="social-icon-col" title="LinkedIn" href="https://www.linkedin.com/in/astha-t/" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle;">
-                                        <img src="assets/img/LI_col.png" alt="" width="25" height="25" >
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/astha-t/" target="_blank" rel="noopener noreferrer" class="email-link">linkedin.com/in/astha-t/</a>
-                                </div>                                
-                                <div class="mb-2" style="display: block;">
-                                    <a class="social-icon-col"  title="Email" href="mailto:asthasingh220697@gmail.com" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle;">
-                                        <img src="assets/img/gmail_col.png" alt="" width="25" height="25">
-                                    </a>
-                                    <a href="mailto:asthasingh220697@gmail.com" target="_blank" rel="noopener noreferrer" class="email-link">asthasingh220697@gmail.com</a>
-                                </div>
-                                <div class="mb-2" style="display: block;">
-                                    <a class="social-icon-col"  title="Calendly" href="https://calendly.com/asthat/30min" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle;">
-                                        <img src="assets/img/calendly_col.png" alt="" width="25" height="25">
-                                    </a>
-                                    <a href="https://calendly.com/asthat/30min" target="_blank" rel="noopener noreferrer" class="email-link">calendly.com/asthat/30min</a>
-                                </div>
-                                <div class="mb-2" style="display: block;">
-                                    <a class="social-icon-col" title="Phone" href="tel://+1-469-819-7543/" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle;">
-                                        <img src="assets/img/Phone.png" alt="" width="25" height="25">
-                                    </a>
-                                    <a href="tel://+1-469-819-7543/" target="_blank" rel="noopener noreferrer" class="email-link">+1-469-819-7543</a>
-                                </div>
-                            </div>
-                            
-                            <!-- Resume button -->
-                            <a href="Resume/Resume_Astha.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="color: #ffff;">Resume</a>                      
-                            
-                            <div class="social-icons-col mb-4 mt-5">
-                                <a class="social-icon-col" title="GitHub" href="https://github.com/ASTHA22" target="_blank" rel="noopener noreferrer"><img src="assets/img/GitHub.png" alt="GitHub" width="20" height="20" style=></a>                        
-                                <a class="social-icon-col" title="LeetCode" href="https://leetcode.com/Astha_22/" target="_blank" rel="noopener noreferrer"><img src="assets/img/Leetcode.png" alt="LeetCode" width="20" height="20" ></a>
-                            </div>                                
-
-                        </div>
-                    </div>          
-                </div>
-            </section>
-
+            </div>
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <a href="about.html#experience">Work</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#projects">Project</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:asthasingh2066@gmail.com">Email</a>
+                <a href="tel:+14698197543">Phone</a>
+                <a href="https://calendly.com/asthat/30min" target="_blank">Calendly</a>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <a href="https://www.linkedin.com/in/astha-t/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ASTHA22" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/Astha_22/" target="_blank">Leetcode</a>
+            </div>
         </div>
+        <div class="footer-bottom">
+            <p>Made with ❤️ by Astha</p>
+        </div>
+    </footer>
 
+    <script src="js/main.js"></script>
+    <script src="js/projects-carousel.js"></script>
+    <script src="js/blog-carousel.js"></script>
+    <script>
+        const $bigBall = document.querySelector('.cursor__ball--big');
+        const $smallBall = document.querySelector('.cursor__ball--small');
+        
+        // Move the cursor
+        function onMouseMove(e) {
+            gsap.to($bigBall, {
+                duration: 0.4,
+                x: e.clientX - 15,
+                y: e.clientY - 15
+            });
+            gsap.to($smallBall, {
+                duration: 0.1,
+                x: e.clientX - 5,
+                y: e.clientY - 7
+            });
+        }
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        // Hover an element
+        function onMouseHover() {
+            gsap.to($bigBall, {
+                duration: 0.3,
+                scale: 2.5
+            });
+        }
+        
+        function onMouseHoverOut() {
+            gsap.to($bigBall, {
+                duration: 0.3,
+                scale: 1
+            });
+        }
+
+        // Listeners
+        document.addEventListener('mousemove', onMouseMove);
+        
+        // Use event delegation for hover effects
+        document.addEventListener('mouseover', function(e) {
+            const target = e.target.closest('a, button, .logo, .nav-links a, .mobile-menu-btn, .theme-toggle, .social-links a, .service-card');
+            if (target) {
+                onMouseHover();
+            }
+        });
+
+        document.addEventListener('mouseout', function(e) {
+            const target = e.target.closest('a, button, .logo, .nav-links a, .mobile-menu-btn, .theme-toggle, .social-links a, .service-card');
+            if (target) {
+                onMouseHoverOut();
+            }
+        });
+    </script>
+</body>
 </html>
