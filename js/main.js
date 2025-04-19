@@ -473,8 +473,6 @@ function initStatsCounter() {
     statNumbers.forEach(stat => {
         const value = parseInt(stat.textContent);
         targetValues.push(value);
-        // Set initial value to 0
-        stat.textContent = '0';
     });
     
     // Function to check if element is in viewport
@@ -494,7 +492,8 @@ function initStatsCounter() {
         const duration = 2000; // 2 seconds
         const interval = 50; // Update every 50ms
         const increment = targetValue / (duration / interval);
-        
+        // Set to 0 only when animation starts
+        statNumbers[index].textContent = '0';
         const counter = setInterval(() => {
             currentValue += increment;
             if (currentValue >= targetValue) {
